@@ -1,5 +1,7 @@
 PODS:
   - boost (1.76.0)
+  - ClaySDK (1.11.1):
+    - VirgilSDK (= 8.2.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.71.4)
@@ -329,7 +331,7 @@ PODS:
   - React-jsinspector (0.71.4)
   - React-logger (0.71.4):
     - glog
-  - react-native-greet (0.1.0):
+  - react-native-greet (0.1.1):
     - React-Core
   - React-perflogger (0.71.4)
   - React-RCTActionSheet (0.71.4):
@@ -416,12 +418,22 @@ PODS:
     - React-logger (= 0.71.4)
     - React-perflogger (= 0.71.4)
   - SocketRocket (0.6.0)
+  - VirgilCrypto (6.1.0):
+    - VirgilCryptoFoundation (= 0.16.3)
+  - VirgilCryptoFoundation (0.16.3):
+    - VSCCrypto/Common (= 0.16.3)
+    - VSCCrypto/Foundation (= 0.16.3)
+  - VirgilSDK (8.2.0):
+    - VirgilCrypto (= 6.1.0)
+  - VSCCrypto/Common (0.16.3)
+  - VSCCrypto/Foundation (0.16.3)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
+  - ClaySDK (~> 1.10)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
@@ -484,6 +496,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - ClaySDK
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -498,6 +511,10 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - VirgilCrypto
+    - VirgilCryptoFoundation
+    - VirgilSDK
+    - VSCCrypto
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -574,6 +591,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
+  ClaySDK: 9555cdd4cb64e6ceb43a55c523c270b1be73174d
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: 446e84642979fff0ba57f3c804c2228a473aeac2
@@ -606,7 +624,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: d6b7fa9260aa3cb40afee0507e3bc1d17ecaa6f2
   React-jsinspector: 1f51e775819199d3fe9410e69ee8d4c4161c7b06
   React-logger: 0d58569ec51d30d1792c5e86a8e3b78d24b582c6
-  react-native-greet: 3868baa4bbc0471ae3fb7e013af88ca04f3328ee
+  react-native-greet: f6a2f338053b970817b9a64896ae0c7d609897dc
   React-perflogger: 0bb0522a12e058f6eb69d888bc16f40c16c4b907
   React-RCTActionSheet: bfd675a10f06a18728ea15d82082d48f228a213a
   React-RCTAnimation: 2fa220b2052ec75b733112aca39143d34546a941
@@ -621,9 +639,13 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 8fa50b38df6b992c76537993a2b0553d3b088004
   ReactCommon: b49a4b00ca6d181ff74b17c12b2d59ac4add0bde
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  VirgilCrypto: 23dd54e1392225ccb008a47e603957b9d8811573
+  VirgilCryptoFoundation: 805e461715e5fe52190060699e6cc5e2e173d37f
+  VirgilSDK: 3df97c14ce06541b7ecfde3fddcfae90eec5b2ae
+  VSCCrypto: 55392d805fb1d881f9fe45a3e295c983af1cde1d
   Yoga: 79dd7410de6f8ad73a77c868d3d368843f0c93e0
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 8d87c249822c963dedefb28a3c0f5c12a63b5614
+PODFILE CHECKSUM: 6bca598a4dee5862435f1c7d75b320e4c00cda35
 
 COCOAPODS: 1.12.0

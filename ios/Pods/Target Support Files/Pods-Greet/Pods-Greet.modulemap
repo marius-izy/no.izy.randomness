@@ -1,0 +1,6 @@
+framework module Pods_Greet {
+  umbrella header "Pods-Greet-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,2228 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		8BDFA2C0DB14198AE4E03AC7689629D4 /* VSCCrypto */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0B85B89C002BFA7BABC7D975458E231E /* Build configuration list for PBXAggregateTarget "VSCCrypto" */;
+			buildPhases = (
+				8CCEBB2F781DDA5743912950E15C6E5D /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = VSCCrypto;
+		};
+		B2798278EB199E9E60DD57FE7E3EBF82 /* ClaySDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 29A977F80347E6E6BFB6ED05760B42C7 /* Build configuration list for PBXAggregateTarget "ClaySDK" */;
+			buildPhases = (
+				9BAA699256FAB3A12AE1DC9818571BB1 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				DA4B544477B923063FA03578AFE2B537 /* PBXTargetDependency */,
+			);
+			name = ClaySDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00223AE49FD11A5BDC44447DE0C4681D /* FakeRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732D19BE2162318E4E29A220F4573874 /* FakeRandom.swift */; };
+		0035F6082735EA822B16F9FD9E178CF9 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13ADC3266A287A260903C5E3BE2FBF /* FileSystem.swift */; };
+		006ADFAC76400F2E67B0A7A87B0DCFBE /* Ed25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9193848FE4C914CE58A49E2245496A /* Ed25519.swift */; };
+		0127C60B340E8A675276A364A392944F /* CloudKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56F1C0F254D9004F84533A4A882DC9 /* CloudKeyStorage.swift */; };
+		020B9A26745B902F572A385AF46C80DE /* Oid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF65A99562078ECBD88DFECAF34153 /* Oid.swift */; };
+		03AF375613F0F5C0F3EC9762C6171A06 /* CardClient+Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0665D5B8C1347CA44E9C5552B681CE /* CardClient+Queries.swift */; };
+		04123E9B11ADF9EC462649C1A312E1B9 /* CipherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49268725499A838E17B5F613E8A6DC0C /* CipherInfo.swift */; };
+		0426272B47E6F09FD5D36872F88ACD17 /* CallbackOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F76BB43C1A187242A9C5E4B2E9ABD6 /* CallbackOperation.swift */; };
+		044783C02ACBEC74EEF3264D106E1F4C /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630ED711BBAF15829997161AAE11D160 /* Mutex.swift */; };
+		0480A0E7C49C0DACD7A02C6E51C55597 /* KeychainUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCD984D3D37E23CBF6DD0ABE65BEF25 /* KeychainUtils.swift */; };
+		04D62CC0BB8B39ECC138674763FA7326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		060650D6DC8A39F8D0057FF6CD258B11 /* MessageInfoDerSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F89BBA33F1F4F68ACE0BD0C7E7FDE4 /* MessageInfoDerSerializer.swift */; };
+		07D46F89358C890237335C8D3B10F5EE /* CardVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB7750858934A6A92F30056A62C88C7 /* CardVerifier.swift */; };
+		0984043CDA4969E037029EDDC27EC4F7 /* AlgInfoDerDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA22CE3704CBFF3870E145063201B0 /* AlgInfoDerDeserializer.swift */; };
+		09DB0E547D191F260FA70FDC6F9ED517 /* RandomPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B592014F61A0FA4FC630E0AA394B39 /* RandomPadding.swift */; };
+		0A0556BE4FCFCCD7B09867FE36427140 /* VirgilCrypto+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E536C9C2E23AEDF064B489E13AC6A4D /* VirgilCrypto+Encryption.swift */; };
+		0A1822420697236A303C09F7F79304D3 /* KeyRecipientInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB09B1673DFB2290435AC915538E768 /* KeyRecipientInfoList.swift */; };
+		0D49BFF7E8AC8512ABFEC0453C2CC1BF /* GeneratorJwtProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4DC4F53CF4E9DC57738DFA88C45674 /* GeneratorJwtProvider.swift */; };
+		0D78665D3755D0971D9F73BA085B9D40 /* CardManager+Obj-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13436104034BD12DADC58529AFAC53 /* CardManager+Obj-C.swift */; };
+		11288E85C03FB6C61C296351A84C342A /* KeychainStorageParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDDB4CCC7AD00266179EA92F6450C9 /* KeychainStorageParams.swift */; };
+		11D660E4A4A9FD64BB724160F4AABBEE /* JwtHeaderContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F19C885C0F32AFB554B23530BCB249C /* JwtHeaderContent.swift */; };
+		123197B4BC9AE3D8B05E0958DF96A8BB /* CompoundKeyAlg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE76B197D72526D867242787B4FC7CE /* CompoundKeyAlg.swift */; };
+		128FE8D24E664ECE88B1D75BAB87130E /* BuiltInTypesSQLiteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1805CD1B3C94927AB1E1BED56B631 /* BuiltInTypesSQLiteExtension.swift */; };
+		147C16FE7B5D84C5096619B4F0EE6717 /* AccessTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956B325137EE62CFEDE65EEFC4260122 /* AccessTokenProvider.swift */; };
+		16F28BA68AFB7E61A5115F51BFC354F3 /* VirgilCryptoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605BB27CE36121900D2B0B8080B70D1 /* VirgilCryptoError.swift */; };
+		180F2AD7D9A8CD5EC37C429EDEB1BD04 /* AlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D513C2153FC4402DBB77CE09DD0D7F31 /* AlgInfo.swift */; };
+		1876505AD81A545909AC3B7CA82800CF /* FoundationImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DFCDE853B25AE59D72530D19B5280E /* FoundationImplementation.swift */; };
+		1882F1FC831C56BE645CBEFBE5FB5D02 /* VerifierCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5510E00FD8D4D96D668810918467B /* VerifierCredentials.swift */; };
+		18E8660693D21CA0FEA581902D09948E /* RawPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553326B7D56E8E6CDD5DE90AD839893D /* RawPublicKey.swift */; };
+		1A0856D2B857172BC6FE244234CDD3A0 /* KeyknoxManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64AC536289D337DF62653D3104A97A /* KeyknoxManagerError.swift */; };
+		1B36BFD68BEA65B2B5DE0F05C1607347 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFE99FD693AA356E981AE256685BEF1 /* SQLiteDB.swift */; };
+		1BC0069E1DCC15F54B2B10CCDF5C9685 /* CloudEntrySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B97344F06CD212D21B210AAD76B195 /* CloudEntrySerializer.swift */; };
+		1BF163F11171C08D20ABAB3FF0823B5B /* RawPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193ED88F7F3CACF0F00BC6960B09A92 /* RawPrivateKey.swift */; };
+		1FE8B041F61848A69D4301C5D8D6A55F /* Hkdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7408E7E9C3D5AF05AED7DB1A017F2 /* Hkdf.swift */; };
+		215319C803F088CE7F18371900A82B96 /* ModelSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0EE5B4417DCA1B37A031B7241B385 /* ModelSigner.swift */; };
+		222693845731ADAFA2DDA25DD9BE3BAC /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5CF1D0210738BAE9BD1984B5C15F5 /* Cipher.swift */; };
+		22E50EB6E7B7C5F804C7D12E5A36CE21 /* HybridKeyAlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11317142881363E1C72E267D8EDAE0F /* HybridKeyAlgInfo.swift */; };
+		245250370EEA8B198F07C60518F02B66 /* GroupSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6F1A8169A46426BEBB17F5CBFD96E3 /* GroupSession.swift */; };
+		2470AA0EAB221CA7F17CCD14FE5DA303 /* FooterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB144C8D5CFA0E2466F78C9A89679CC /* FooterInfo.swift */; };
+		27F40C6224F525488E2761361B77237E /* GroupSessionTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BAD6F3FC9E4A1AECDB10D9421A51D1 /* GroupSessionTicket.swift */; };
+		28213DB496320D1576A0E93B4E5762E9 /* Decrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9DA1A73B67E2750150065F2C03270 /* Decrypt.swift */; };
+		2B1A194ECB6C434DE827A2003D272617 /* CompoundPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597C92FDC1C4B1D95CEC18F6FA181D3 /* CompoundPublicKey.swift */; };
+		2F0575DE1A32BD2A2039C7EDD33507DF /* RawServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FECFA35AEA8CE839D9FDE2B0CA976E1 /* RawServiceError.swift */; };
+		2FFE522E6A22A0FE5CC41BE3E0E65BBC /* KeyAlgFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D04D9D413AAAB1E87A8F603D189BF77 /* KeyAlgFactory.swift */; };
+		3228B75BD350DB6891394FDDD6C8344D /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7DFF46A151C4ACB2E1331D8EB63E5 /* KeychainStorage.swift */; };
+		32B00D5F4F6BDB0C405ABCE37B70717D /* AlgInfoDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E2CFAD46AF5F9A8BCDE9247E0DE4F /* AlgInfoDeserializer.swift */; };
+		336059877DA55D34DA878BCD6BB25BA2 /* VirgilPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BED89A112B52F18CF0FBB9CAD105542 /* VirgilPublicKey.swift */; };
+		33D1183A5CB4273EA661B232AA327329 /* KeyAlg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3600293C66624068FE16FFDAD9072D1A /* KeyAlg.swift */; };
+		368D8D10A0E1CD03C7CB0658941A64AD /* OperationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E5B50C5C5DCC3EC8C15D3FB949D9D7 /* OperationUtils.swift */; };
+		372D434B90DDD1A50A1EA14B1BC4704B /* Sha224.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E4720A7C306B4FFD01E1DA9B17566E /* Sha224.swift */; };
+		376238FC478A0D7DD32190A2182662AF /* PaddingParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADE4A04DC8E15DC9C5EF9A2ECFD65D4 /* PaddingParams.swift */; };
+		397BDB971CCDDB8B1D983DEFD2B291D2 /* JwtSignatureContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D3081964EAAE9B3F4A5DE132EFF2D8 /* JwtSignatureContent.swift */; };
+		3996D36BBA20114FFB33BC8D76C04432 /* HttpRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75DC136E3D756D5520C9331A9B900F1 /* HttpRequestAdapter.swift */; };
+		3BD9F9FB5632E34389B576383660B630 /* Asn1Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A9E93FF6E144117AB040A94EA39A82 /* Asn1Reader.swift */; };
+		3C22B601B2A3BCECD263DA1CD2C38E8F /* KeyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD8B9DB759E33971CAEA84D3F5DF8C9 /* KeyEntry.swift */; };
+		3D275C66554040D4F368B306D609F788 /* Pkcs5Pbes2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA4ABB20ABD352DE541C92C3797E33 /* Pkcs5Pbes2.swift */; };
+		3FC6DEABE939BF52645621B427A996EB /* CardManagerParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35350A22A58AE339F7308DFD4A5A9B /* CardManagerParams.swift */; };
+		4021FDABA1867E2562B2416730F291EE /* CompoundKeyAlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BDBC6C0269266AAD80BBF1DBE880A7 /* CompoundKeyAlgInfo.swift */; };
+		4054B337F6C6179E2EE118D4E460E212 /* Asn1Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA366C908591771BE9B356451B9EE985 /* Asn1Tag.swift */; };
+		40663583FFE18D52F9530992B4E90AEE /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39625794A1907EAD34C03FA0889A3501 /* Hash.swift */; };
+		40A28A7B2F0FFCE6C9D856C87524C5C7 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC128B951232B772CB3ACE65ECC8608 /* Padding.swift */; };
+		41D3AEB54E424F1F1FDB42917C9F013A /* KeyPairType+RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD6961603032A471B6532E280A8594 /* KeyPairType+RSA.swift */; };
+		43996C84307082A6C19CDB27D22BE617 /* Asn1wr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A6ED877A899615FBE778705B4731DF /* Asn1wr.swift */; };
+		43CE0BC2A603E640F801BD6F6FAEDF57 /* VirgilCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD531A30ACA562F31E4A810E8943BEA /* VirgilCrypto.swift */; };
+		440EC9C55FE1DF3DA62AF2436E1FF1DE /* Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB6B19AEE2A0F63DF97FF9578EE1BF1 /* Mac.swift */; };
+		44179BC758C31EA61DEF8B4E91013595 /* KeyknoxManager+Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A1786CEDC801A15EAEE86C32FC0AF /* KeyknoxManager+Queries.swift */; };
+		4443E4ECF59724338BFDF24AA7B25F84 /* Data+base64Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9967AD54FD104F7F54CD4C763CF33A3D /* Data+base64Url.swift */; };
+		44DC26183738D1F85A4E612641C53250 /* TokenContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18715BB173692BE1A89A45B5C741035 /* TokenContext.swift */; };
+		44F7E2CABF54B0BFB149DAC6CA9A4D4B /* KeyknoxCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7589CD3E5ACA0BABE0058B05440CDCB /* KeyknoxCrypto.swift */; };
+		47B8AE782F262971ABF681F1D292EE74 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F14EE03A73477B1B02DE0E7442D63 /* Reachability.swift */; };
+		481639369E2CFE2EFEF5143573D40CD3 /* VersionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B7DE9C56411FB7BC69FFA4F14D0741 /* VersionUtils.swift */; };
+		48C4A8A71C71ABBA68CAFDDB4703AEF5 /* CContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA0E63E0DCD8470739CA73EF386CA9 /* CContext.swift */; };
+		49CB9749812A16CC5508589BC1487631 /* CipherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4435BA7A71322587A4E6EF1C05CD4 /* CipherState.swift */; };
+		4A37B04F5A58C658B58314260448D99B /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA62F51F1C65F7374C0055E85BD3A1 /* HashAlgorithm.swift */; };
+		4A491B948F31B4E25E4738BE05056E95 /* KeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722FD7132F403B83FEFB5EE15CFC83C /* KeyProvider.swift */; };
+		4A9B91236EFC36248DAC20E6AFC7D55A /* KeyPairType+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CA5416C68D00D469A680EFFB9EADE /* KeyPairType+Convert.swift */; };
+		4DFCCE8B930306317AA0709073327E3E /* KeynoxClient+Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72611D580980F3FCE707FBC39E0ED8 /* KeynoxClient+Queries.swift */; };
+		5070AC278E7144C6DF068E7841BC6FB7 /* VirgilSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B02EF4FDAB9BF01B8923BE55F02EEF12 /* VirgilSDK-dummy.m */; };
+		5142F2C0EB92160F503AC4EAFF45AAEC /* KeyPairType+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07E35EA8DADDC3236E1B0562444759D /* KeyPairType+String.swift */; };
+		515032098D61F00276C8A88DD7D1955D /* Kem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E86EE37EAF4085EF47A75A79FA4EE /* Kem.swift */; };
+		52A1156F231CEE9A5CFB5836A4A67E79 /* CardManager+Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69103E4B589B98BD3331906B56E148 /* CardManager+Queries.swift */; };
+		52D10C763EAA7C016D5E598C9495B1E1 /* MessageInfoSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD32E90E9D87E750EBCD9A4B19FFDC7 /* MessageInfoSerializer.swift */; };
+		53454A84BDAF87905EF04DEF53D498A7 /* HybridPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A10DF7CB835F60562A3F158ABA96AA1 /* HybridPrivateKey.swift */; };
+		53A6FE81BCB7FBCD123A1DA54573C851 /* KeyknoxManager+Obj-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2479157E6CEF3F57A757CECB1C53C12 /* KeyknoxManager+Obj-C.swift */; };
+		54CC172C6DA168A01DAB6246CB456ADF /* SQLiteDB+GenericExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9211A28AF95B94B320E472827E50A /* SQLiteDB+GenericExtension.swift */; };
+		550471630631D5290D4051D3E579DC06 /* GetCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E98A896CA441E0C11AE38F7EA5A550 /* GetCardResponse.swift */; };
+		56D2F2503CECBD4DB6A0A9CC550F70A4 /* CardManager+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7100FDAF8A26550864BCDC28F7D29B19 /* CardManager+Parse.swift */; };
+		589CB5E265FB48B2D40931046024CE36 /* Alg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BEA85EFD4E1DC8D634570288D60350 /* Alg.swift */; };
+		590A7A247EEAFEC9E26686F8875EA767 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D881FA3443E5ABDA3C247B13C2AB2 /* PrivateKey.swift */; };
+		5A26F662138C25E1B39C53C841E29865 /* Sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE26806D2B445FFC0C7565FE45CC9B0 /* Sha256.swift */; };
+		5C55BAD46642625B41F05FA78DF0E5EE /* JwtGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA89054E32FB80ADB8EEEE1F9784702 /* JwtGenerator.swift */; };
+		5D3FC7EBA59BAA70BC3F82FD2AF37EA8 /* RetryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3DC0E09ADBF4D4E2E276A816D456D8 /* RetryProtocol.swift */; };
+		5DBFC5CDC7FEA80B35D1AD1B5CFA9BC4 /* GenericOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E44D34DDF600DEFD18EE87CDA87F27 /* GenericOperation.swift */; };
+		5E6F5E384CFE1EE3606508B152AC63D1 /* Pkcs8Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7CD0B2B172E9EB329D91E277294175 /* Pkcs8Serializer.swift */; };
+		5EDD7B4C094A2966411BC2753590672A /* PasswordRecipientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732108EED06E5FA13AA0AAB5A5F94FD3 /* PasswordRecipientInfo.swift */; };
+		5FB6B0560CC2358B898A549F2911C4B0 /* CipherAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027496F2F20138134D5DC33608A2ED43 /* CipherAuth.swift */; };
+		6043E52C17637EDCBE8D20ABD627E236 /* KeyPairType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D29AAFBAB37031F8BE2C3575E4A5528 /* KeyPairType.swift */; };
+		6083A9489F9CB1D5F059165287F180E9 /* RawSignedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6436E0FD097C16C93E0423FF1749AFBE /* RawSignedModel.swift */; };
+		60E60737F048899693F755144D901131 /* VirgilCrypto+Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3A82C66AD15C24AB614100C18480 /* VirgilCrypto+Impl.swift */; };
+		645CD79F084B0AE6AA2502C43F932E62 /* KeyknoxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D468D0FB05F53A60EAD5A8C6820CF4 /* KeyknoxClient.swift */; };
+		6490858C30ADD75D6930153ADB39A75C /* CallbackJwtProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281DD67E261CDB6F7E6FC0EC2642941E /* CallbackJwtProvider.swift */; };
+		67FF4085246DA75C9C980274A2B9B350 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28A5BB10DD0AB5DBF56630BEC59200 /* ServiceError.swift */; };
+		68189138CB9609A6CB88789864D97B17 /* CompoundPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F6DFB83798ACEAA28CA24DC5C0CD3 /* CompoundPrivateKey.swift */; };
+		6A394B0A5E125E8FBF76524F4472EC81 /* VirgilCardVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1333343D6B48F430A8BEF87A65E8B0 /* VirgilCardVerifier.swift */; };
+		6A5F9CA0E0C60153B6B1423503E25D7C /* StreamUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58DFB7C009D15A7A65409745DC4AB48 /* StreamUtils.swift */; };
+		6D04C688C4572D55BB608F7F27BB739A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E4278AD6E32AB73AF985A12839AC37 /* Request.swift */; };
+		6D3706837B4B3C1CB918B9BCF6035727 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701925783DE208CE7348131CD61DE09A /* ServiceRequest.swift */; };
+		6FA242694FD5992273C5EB4F7CADA30D /* SaltedKdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37285743CD2246B550950F29EC4E1E4 /* SaltedKdf.swift */; };
+		6FBD822EA01EF43AAFC2E922B9302A52 /* FoundationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643DE7F0A273EA85FA7A63F21CD7C393 /* FoundationError.swift */; };
+		7064E85F068D8F004F0ADD2D03F4E88A /* JwtBodyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C626332C2D7726232082B039608F2F47 /* JwtBodyContent.swift */; };
+		70813A4A931941CF131EF4451C85B57A /* KeychainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2ED31F299488395AA5CC9455973C8F /* KeychainEntry.swift */; };
+		712304734CE47818D4915E2C22CC414D /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9005EF60B4C2F781BD0316DD03BAE69 /* AsyncOperation.swift */; };
+		733237130CAA406BF324B36443CF7357 /* SaltedKdfAlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268EA2F073F582A2D997E3A29EA5FC10 /* SaltedKdfAlgInfo.swift */; };
+		7345309444B5F81950B58E7656FD4FFB /* VirgilCrypto+AuthEncrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC1DF4916F8EB9E84A1D51B752370B /* VirgilCrypto+AuthEncrypt.swift */; };
+		73E0D4B9B76E388797EEDD818FCABD63 /* GroupMsgType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD69362A96E1563C1A8FD27342BFEB7 /* GroupMsgType.swift */; };
+		741F6AF441EBB1433FEF26427A116C6B /* Sha512.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB06C02FDE42EE66F17D66986C50A350 /* Sha512.swift */; };
+		7562122A0F80B9EEC9B38736E94DE2E5 /* KeyknoxClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572912362629FF0321C36373EA8AD00 /* KeyknoxClientProtocol.swift */; };
+		75734696DD4C67E0F8E4B8DD847EBA0A /* OidId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578B3C8342A70223641CB41F6272ECA3 /* OidId.swift */; };
+		762B411F0D2BE28156A536BB98255B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		773BFC25B811E9586F7ABD389345EA81 /* ComputeSharedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751B1E3F13BE60C8547F04DB2B311C3 /* ComputeSharedKey.swift */; };
+		77A3D37894B5E649AFE0E69C74CED7EC /* VirgilCrypto+KeyGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326A8852BC96F6DD72FF0B19CBA6D36 /* VirgilCrypto+KeyGeneration.swift */; };
+		7A84A8B8192595936FB9F5B0072A47C4 /* Falcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9654B927C075B10220D943F1D3BA9A4 /* Falcon.swift */; };
+		7B306D571D6742A66208084E742D2C1F /* CardManager+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761D314DF2A87FA901A4A836F00FC3AA /* CardManager+Export.swift */; };
+		7B6039CE32551CA0694453475C7501B1 /* SandboxedKeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357D748789C276962797A787E1CA8C35 /* SandboxedKeychainStorage.swift */; };
+		7D40844D1C066773E2BEC6FF1B6FDB8C /* Sec1Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710CBCF1DFBADD72C5870960F4AA6F /* Sec1Serializer.swift */; };
+		7E21D1C313BC395613F7280FCBA41431 /* KeyknoxCryptoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6F104BA519A7B8932C4DC967893A96 /* KeyknoxCryptoProtocol.swift */; };
+		7EBF65BBF56CB5220F7552A49F09B867 /* AlgId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10701DD47B49B4F652075E50717EECC0 /* AlgId.swift */; };
+		7FB6F0E69C5EA5CFC10F95722C80DC9B /* SyncKeyStorage+Obj-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3A6AECDE0CEBCC59DEEC04CD56625 /* SyncKeyStorage+Obj-C.swift */; };
+		7FC23B99F1CBA5EB843054B89DDA8348 /* Kdf2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8DCDB7AC78913470ED445B0F482249 /* Kdf2.swift */; };
+		7FD34D4EDE7578376BE2251FAC714CE5 /* CloudEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB749A99C453CEAE5634A7E4950763E /* CloudEntry.swift */; };
+		8273B17A8C6430A42E52A0DDF66DA124 /* VirgilCrypto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AC3D3B2CEB2D16969958341A670CA4 /* VirgilCrypto-dummy.m */; };
+		8332995BBBFF417160F8011A151CC93E /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA614476E5D0CFFAF220DDE85766824 /* Random.swift */; };
+		833DA494A4CB9CDBBBB85905BF3F1B05 /* VirgilKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1A4E30BA9B146BE0936EC959EBE71 /* VirgilKeyPair.swift */; };
+		8677045AF9A49A1A4CDF498810581FFB /* HttpConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AADA591743FA48C22EE1053CCEC2D40 /* HttpConnectionProtocol.swift */; };
+		881AFBF146061015FB6BBC505C436CE2 /* CardManager+StaticExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33118BEF3C3693CA029B5E38206BF055 /* CardManager+StaticExport.swift */; };
+		8A05364B8DF8589FA9BBA2478099B13C /* CloudKeyStorage+Obj-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03684BF8133B853A024248DB24E4C96C /* CloudKeyStorage+Obj-C.swift */; };
+		8D580E6CB51FB933B493BCB45AA8DA88 /* Hmac.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0500B256BF890B1A54B6156ECCF87C /* Hmac.swift */; };
+		8D68F958D4E9F66C0DCAB297B25028A4 /* VirgilCrypto+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113311817BD2F54E7CC315FE1DB3298B /* VirgilCrypto+Random.swift */; };
+		8FBFF51983CBCFF7EF8974085D5599DA /* VirgilAgentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F4EF34DE7254DC501D974BAA690389 /* VirgilAgentAdapter.swift */; };
+		8FCC866160EA06B7175B47451FDC17B3 /* SignerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C980D07D97A6F65660D98727C3E08 /* SignerInfo.swift */; };
+		9076B3009CC13B41290E9627AC324AA7 /* Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F6BE42CEB19BCB2013EEA2D548EA77 /* Whitelist.swift */; };
+		9088D236D3B745F6C8CDDDDE6A8E5F8A /* Data+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32901C1C83B9C9920B6ABFBD75B50DB7 /* Data+hex.swift */; };
+		9163412194259CC57A404FDB23CB1B46 /* Ecc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA595AB24C2DF4AFAC01C81B24FEAC7 /* Ecc.swift */; };
+		9226CDC0BF9B31AF4C6377668485DE96 /* Asn1rd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083A4720A85970A9CC5BFC6FEBD8263E /* Asn1rd.swift */; };
+		92D8720F5ACE7484B39DB1085A2CB72A /* GroupSessionMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A9ADC88E22ADAD5345BDE9C20BC6B /* GroupSessionMessage.swift */; };
+		93242B7104CD282984547F3C7A535CDE /* AlgFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479DA3A88E5AB8E09889022B81DE508 /* AlgFactory.swift */; };
+		9343124B4EF32A04378086BD1E12CCC7 /* MessageInfoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34FA64EE2FDC16FF1AE39007253C2B /* MessageInfoFooter.swift */; };
+		9585AA7AAAAC48AEAF74C4888174DDC8 /* SyncKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C7F35C6C58B37D004A749BCA4A4B0 /* SyncKeyStorage.swift */; };
+		95D5DC446D0B606889F9E1A748D19C4B /* KeyknoxData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C4BA279F464A708832F54AB64ECE7 /* KeyknoxData.swift */; };
+		95DC952FF6C4CEBC6CCB938EB8462C66 /* AlgInfoDerSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D73ECA3E19B400E81DFCA17E99FA08 /* AlgInfoDerSerializer.swift */; };
+		97615EC70C9B247E36403FFA55144A11 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A59DAEA73AFDF704C9185B1D90FC7 /* AccessToken.swift */; };
+		9856199C1570706B980B37DAEC608B31 /* RetryChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4075E9AC16EF2C1B5FD52E8C538D72D /* RetryChoice.swift */; };
+		98A93BB028014A7ACFC0BACFB9E6620B /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634E7A0B0F9831B4339CFA2A80A0773 /* CardManager.swift */; };
+		98DCFF65A8D11D81B7E3F91ECF975F79 /* SignerInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D63FC7F2C6D358508C07B1F6F13D6 /* SignerInfoList.swift */; };
+		99C1F9B354C81C9A3836D405AD1E1913 /* VirgilCrypto-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3385E546EACE486264C8E606D7AE3AA0 /* VirgilCrypto-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AB35989560EEF7651A67A548282D032 /* CtrDrbg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3911AAB3788A6ABA60DE00B44D047627 /* CtrDrbg.swift */; };
+		9ABC48CFB1592D14254D7131AE9EF617 /* RsaPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D98A04BE697D4673AE564A89F528E /* RsaPublicKey.swift */; };
+		9ADD35791CC34778A7403747F0D158DA /* VirgilSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC95E76ADB1C43726D121A4F398EFEA /* VirgilSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B4DBDC34E45DC76310CBC144898356F /* CardClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB4C5AAB4E5F5FD8C80852522FE32FF /* CardClientProtocol.swift */; };
+		9B7CAB60F9F123D960B76438A409AFB8 /* EntropySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99620E94F013495CD12595C805E6E125 /* EntropySource.swift */; };
+		9CBA855389F731F0B988E782C8691F7B /* KeyMaterialRng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD492095A6D6C00636D0671F58E7B4 /* KeyMaterialRng.swift */; };
+		9F345811DB520B83AB19243B80369878 /* KeyAsn1Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4606C6AE098EA81222216A068CB3FE07 /* KeyAsn1Deserializer.swift */; };
+		A03AB0E10596488B01B3E7CF5D7F3BA8 /* SeedEntropySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E4B745205F3428C635C12653B3147 /* SeedEntropySource.swift */; };
+		A0463B81DCC007016ADCC29CA216892C /* RawSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9424521AD586D7E99B9E3AA3C11110BA /* RawSignature.swift */; };
+		A1F2493E8BFA88903B42743A3AE9E21B /* SyncKeyStorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F870D64A3D021656246CBAB8966B6 /* SyncKeyStorageError.swift */; };
+		A2271B8E1AFB6E2077AA840F4D85989E /* CardClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD57AB3AE270370266ABB903883A57F /* CardClient.swift */; };
+		A2E614243F1B2ED5AC46617E929D3F60 /* Aes256Cbc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470AC9299A25369DD87C0924F4A85C15 /* Aes256Cbc.swift */; };
+		A34312888AE22C20B8B9C72B6B36C48C /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F10D8F3990FAC759F3BAAFAE52348A /* Key.swift */; };
+		A37630EF3E816663A92BF8B0EE0BB546 /* BrainkeyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C75E963E495D42975804843F636E92C /* BrainkeyServer.swift */; };
+		A3A44A029C6D8344035F13683ED56F4F /* Round5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85CF93D6556AE70B9190820C1D5473C /* Round5.swift */; };
+		A6F99F6930588CC43545FDC42861F59C /* Pods-Greet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E282E1F280C7A851D3C486DF367D486 /* Pods-Greet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A75E64848F518B8EA72AC0471A0524A0 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8C9E6D77C344E8815E73522BCE5FA /* PublicKey.swift */; };
+		A8DD37F01780F9F0B624021256CDAA4A /* KeyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20ED32A9CE11F4C3DD231BCDA7E454B /* KeyInfo.swift */; };
+		AA3F6FC54292A43E90A86694E57C0D9C /* SQLiteStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F9957183B7F4E773D228E91BDA002F /* SQLiteStatement.swift */; };
+		AAE21052739749B5DC7B6E0A4C3F7649 /* Aes256Gcm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C823DE3C5901AEA0424CFCE24770D2E /* Aes256Gcm.swift */; };
+		ABC5967E52247B09AE62D638386715F7 /* CachingJwtProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8F9B770A2B4F063CC6546FBEE5DAA /* CachingJwtProvider.swift */; };
+		AC1277764B35B68E9B476C1B27E2A9CC /* Signer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7969396BDB77D848074524711A2EB7 /* Signer.swift */; };
+		AE168970D171D0B95ACFB57CD95EAAE7 /* Asn1Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D31AEE0CDA3A7BD93096F171B6B13 /* Asn1Writer.swift */; };
+		B01CF9C5C6257793AFB519D866E11173 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75BC7066715DFB49E1EF04E10A9811E /* DateUtils.swift */; };
+		B08B9ECB2D5593048CD1B11A06C600A5 /* Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129B874CE8ECF9E15DF872E9A17407E /* Verifier.swift */; };
+		B138EEFA5CF8420502940FFD91ABB5FE /* Pkcs5Pbkdf2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50FAE5859276F6B966EA12012947A95 /* Pkcs5Pbkdf2.swift */; };
+		B1856221D6B2C5D1937B51E6804F7797 /* KeyRecipientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9469A995A2704D1AB84FE1B445AF04 /* KeyRecipientInfo.swift */; };
+		B481AEF3E5E7999EDF98678F3A8AB340 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F028400615E2A0635C644F68DF166 /* Card.swift */; };
+		BA355F9453561BFD44E281BA9163BA08 /* SimpleAlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25DD5ACF198586B7854838BD7E01260 /* SimpleAlgInfo.swift */; };
+		BA92497B4A208A8BE55062AEB4022B1A /* Pods-Greet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D37D9537152550694421DEF9F8FF960 /* Pods-Greet-dummy.m */; };
+		BBADD0CD163F7CB46E94A3AF72FFB347 /* EccAlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E960D89ED5019F177D76BC9059B9C3 /* EccAlgInfo.swift */; };
+		BC5F65E4BC3B7742283A04939DCF53CD /* KeyknoxValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8738B12C07B2973848D38BCDB55AA786 /* KeyknoxValue.swift */; };
+		BC6C94598B7AC5E5E9C907201C3800B1 /* EccPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002ED02F86B4FA2ACDC8EAF9C64B7861 /* EccPrivateKey.swift */; };
+		BDEA93A6D89F3B60BBE092347782A963 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BDEFFABB97B32BDAC2EE6E961453264D /* KeyDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A189B8D6DC85BC987B613A68729BC /* KeyDeserializer.swift */; };
+		BE59A1993E941C2D6A63E63D85DDD625 /* NetworkRetryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B8D98F29EAEEFCD89940473B2BC721 /* NetworkRetryOperation.swift */; };
+		BF75F3254F01FABFB2AC0292BC3D4C29 /* Curve25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4977BE915D42E8E959A37F8CC766084 /* Curve25519.swift */; };
+		BFC03AFD8155373E1785F43C3FBEA0B9 /* VirgilCryptoFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED24AD0D64D6D3BE9075D3C71CE42DFF /* VirgilCryptoFoundation-dummy.m */; };
+		C2E2F58467E55375B40C8FF26E5CFDC1 /* KeyAsn1Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155A5111D420503D1330CB6F22503A72 /* KeyAsn1Serializer.swift */; };
+		C31B38AD54B6C2FDC61528FFC9A8CE7A /* VirgilCryptoFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53564652B66043CDD50EA6E95740BA05 /* VirgilCryptoFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4BDE9F21764981CD756C56B2533263C /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C38C61B47DD86B42397363EE96767E /* MessageInfo.swift */; };
+		C55FFF4A46A5FA1286E038D879884E90 /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2DE4F98740CA930388191546C0DF3 /* HttpConnection.swift */; };
+		C593C639BDF1505218559B24D25CF181 /* MessageInfoCustomParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E34AC0EA134535461CE07BE8B1CE12 /* MessageInfoCustomParams.swift */; };
+		C7C7E4FF5794E45FEF6E65F8BC8FEB6F /* CardSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64BDE18779D8AD4189346F15BD3B6C /* CardSignature.swift */; };
+		C90075DF56B3B77C2146746F6C702B20 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA5DB0671088F3A6B8181FD1AC290D /* Log.swift */; };
+		C92FE5D16F3C8A64C089810424678274 /* VirgilCrypto+SignAndEncrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C52AF16705677387AF21EA2164ACD /* VirgilCrypto+SignAndEncrypt.swift */; };
+		C9C5DD099961B6FD0EDC4430DF4FBB71 /* KeychainStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0BBD4C161A6CE64CDEAEAE671A45E /* KeychainStorageProtocol.swift */; };
+		CA7915A3432B067893EBD77D45A2849C /* Sha384.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850A2E416A0730ED055B6F1A5B9F996 /* Sha384.swift */; };
+		CB0E8FE7C034D45F6D772CACF997CDF0 /* PbeAlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA11D2B4EBA0AD7C45BC31E66BA092 /* PbeAlgInfo.swift */; };
+		CE4BC018F15502EF2320C682022298F7 /* Rsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A60F53B7E947E516439796F52188DFF /* Rsa.swift */; };
+		CFB7C220C6FC72AA7A3950AA83557F28 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAB6F1CF52CF04129B17DD593B518E5 /* Base64.swift */; };
+		D1A7A4451A4EDD221EE0B0807E2392D8 /* SyncKeyStorage+SyncHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2AD5837CC8C8E6F3BCBC7489CC6477 /* SyncKeyStorage+SyncHelpers.swift */; };
+		D1E3896544DEBABC9BF23FB3A1D26AAE /* CloudKeyStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98363463922B35CE8C43962F5ADC809 /* CloudKeyStorageProtocol.swift */; };
+		D1F3246B5FAEAD110CFB606E9095CA68 /* HashBasedAlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2021EC1C8B020B2326391F8AF3DC /* HashBasedAlgInfo.swift */; };
+		D2B3386AFEACDC4B702FD51E8699C7A3 /* MessageInfoFooterSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C5068DDD6D9A99EC08B894F02EB67 /* MessageInfoFooterSerializer.swift */; };
+		D57A94C1E6844BBAEDFC3C596FC52CD0 /* BaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB679C002C79D3C7DCE7BB6A3B4E65 /* BaseClient.swift */; };
+		D58D47BE78B889BD8FBC3409341589E0 /* Kdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1342C1A8AF97AB3045E6986E966FC /* Kdf.swift */; };
+		D6054C4D1E70A63362F4502570B3C71A /* AuthDecrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF63ACA861D2BA0DFD2426D3D150AB8 /* AuthDecrypt.swift */; };
+		D92A93E9F53F4235A275EC49CA7EF1EA /* Kdf1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622F35DB5416FB749688A4E6FEE51A0 /* Kdf1.swift */; };
+		DAFBA68AE9F1AA1F345DDCE3075EF99B /* KeySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000752ADC4A024B1FF470575E23EA41 /* KeySerializer.swift */; };
+		DDB476A7CDFDA0655B39B71C54277702 /* CloudKeyStorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9107FB43C44706CDD918137C4F86070 /* CloudKeyStorageError.swift */; };
+		DDD2AAF99227ED320CEE36FA2EAC252E /* VirgilCryptoFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = C8215F4322AFAE5EB3801B822995DD7D /* VirgilCryptoFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE9186C6994C0298BEC0578325110571 /* PasswordRecipientInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A5DA42EA3539B4290B91679F7E467 /* PasswordRecipientInfoList.swift */; };
+		DF3262A3E3150E2DD888035B58B66D92 /* Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85749EB88445EC50AEE8C8DEC732DD /* Encrypt.swift */; };
+		DF85EF7D8CD2AB8025B42106751E7A6E /* VirgilCrypto+KeyManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F8F17541D0EDA6F7F6C8D0C79F474A /* VirgilCrypto+KeyManagement.swift */; };
+		DFD6FFD35C1FE00C00F9708F4DA3513D /* RawCardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FF26F884CCB4C24A380B62AF0A50F /* RawCardContent.swift */; };
+		E036FE97630368B323A91EE8FF29DE5A /* Pem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C09E9A02420D400A009EF87F34F5D3 /* Pem.swift */; };
+		E14757081C53FDCA4FC4418096CB4B10 /* ConstAccessTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985A09F1061AEBC1E483286D3A7DB9C /* ConstAccessTokenProvider.swift */; };
+		E19FF0C51FA9FC3C077496A4CA995DE1 /* AuthEncrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B4C0DFD78C30DC17B5028E275FE93 /* AuthEncrypt.swift */; };
+		E2EF8A0CC9759CEEA2B6E22A6375C678 /* EccPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318F7FF542FC3BC99DC6E9735C451A1 /* EccPublicKey.swift */; };
+		E2F7E2105732108DF9C92F4EF523199C /* HybridPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF28B0E47562C11243094E949170C57 /* HybridPublicKey.swift */; };
+		E551ECE4C30C80BA38A3B22048EF23BC /* VirgilCrypto+Signatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08360AFD541A7AC6366247C85D5ACF97 /* VirgilCrypto+Signatures.swift */; };
+		E59B2AC2DC24D5AA684B763F62E3554D /* Ecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01483C387F939AFF471A5677E907CF /* Ecies.swift */; };
+		E59F218A855F7ED65E28A910D0D6B2F6 /* VirgilPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9434D57FFBDE93E6197BFF83A8893C6 /* VirgilPrivateKey.swift */; };
+		E5CCAEE577E2EC4AAD9863B4DAF3FA7D /* HybridKeyAlg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25792B3FA5CC85A1DAD78E802DCA1B3A /* HybridKeyAlg.swift */; };
+		E646AE81D4CB9593E6BA16E4DE3528EA /* RecipientCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4B166F632E97E6CE0A7279AC4F312 /* RecipientCipher.swift */; };
+		E6776293A7E4E3C23B4BA0231AD6889B /* KeyknoxKeyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B609204E92B615A68FD4061ECA3C510D /* KeyknoxKeyEntry.swift */; };
+		E68AB8B5888F2F9F1C42535BD89636CB /* RsaPrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21795379E0B750A358DA744483C361BD /* RsaPrivateKey.swift */; };
+		E6CF63EA172C9F8F3DA9CCDFFE217AC8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B6C7E734DF46C806BAA95EE2AB51F /* Response.swift */; };
+		E7FCBD41AA5603D73EB8528475F4C765 /* KeyknoxClientParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838D8B9CFD7639F0D13F35888B75C18 /* KeyknoxClientParams.swift */; };
+		E83ED60784C2CD0FD0ADA838811759B0 /* KeyknoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F5C9992C6D603536D14021275B5B7 /* KeyknoxManager.swift */; };
+		E8C2864E10F3277EC090DDA6A5B5F2CE /* BrainkeyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA2236AF6C6100A4A6515C4FBAEB54 /* BrainkeyClient.swift */; };
+		E93B67DC249E95AA85E45FDC0B9BEFE9 /* ReachabilityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D0F3736AFFF1BB8BDC500085EB5CFB /* ReachabilityProtocol.swift */; };
+		E9419BA683E1BCC085943CE2A001DC93 /* SignedDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A084BF2F24CC696B5E6F8C3A123383 /* SignedDataInfo.swift */; };
+		EAE8124EBC8956858777B097D2F1C45F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E8722A05A9078FFBFC3F9481ED808E /* NetworkOperation.swift */; };
+		EB137FDF57834F37244A15C22FF61BBD /* GenericOperation+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AC2E98D0A623F4083F9262987420C /* GenericOperation+Dependencies.swift */; };
+		EC82385955AB67CE8266C07642C0BC6A /* CipherAuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6696F942E1AB6712CDF13CEEB6D67290 /* CipherAuthInfo.swift */; };
+		EF42F57AA5A24361200F08551D7C0E39 /* CipherAlgInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D18312258789A38DE5352709190E12 /* CipherAlgInfo.swift */; };
+		F3DE66D587F912775DF8AD76AF31F9F8 /* EntropyAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8973DF1AF8FC5C72BDAFF54A886A6 /* EntropyAccumulator.swift */; };
+		F43C7D24DBFB0AD513CE5367553178BC /* MessageInfoEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E872A534DAB0ABE832A74DB0B44C67E /* MessageInfoEditor.swift */; };
+		F55B0068B944CBF971DD32D8FD46ED73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F5FE9E1F2FF44C0C1EBAD8C2014C22EB /* AlgInfoSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEC2542EB7E3D3F558D76F6D3C1A94 /* AlgInfoSerializer.swift */; };
+		F62D0B2882070FF2BEBCE65FC7CF950C /* KeySigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61953052CE37129C844402ED4EEDFD68 /* KeySigner.swift */; };
+		F82CF35B4A1BBBC91A73CA59EE7FD591 /* KeychainQueryOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF824E0022203D778F0B898D463ADB /* KeychainQueryOptions.swift */; };
+		F9A95000EF0310A225B0F53A91BDEDAF /* ExpBackoffRetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA25EE5ACF537E25D04A81621512516 /* ExpBackoffRetry.swift */; };
+		FBCC0712399024D9906FA8D09A230E0D /* KeyCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC5EF5AB6342CF05896AF261F06B95D /* KeyCipher.swift */; };
+		FD92DFFAA97763501ED89D013B8399F3 /* SQLiteBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C0025A0A509283D808E2E090B0C051 /* SQLiteBindings.swift */; };
+		FFDB0A56119DDD0DFCDA8139486137FD /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBD9170C32D8B910D89EB458FCD9EDF /* JWT.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		278F1AE2F1D132966F74F81C6B311F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BDFA2C0DB14198AE4E03AC7689629D4;
+			remoteInfo = VSCCrypto;
+		};
+		4383A955084A0767082B16782A7F9BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C710066F044BC68BAA8FAFEEC7089AF;
+			remoteInfo = VirgilSDK;
+		};
+		583FB22DDB51A218E270A777487D6632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BDFA2C0DB14198AE4E03AC7689629D4;
+			remoteInfo = VSCCrypto;
+		};
+		5C055AD77536245F59FB900AE9AA75ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27865AF1C1942627E7CB060EB758FFBB;
+			remoteInfo = VirgilCrypto;
+		};
+		7E51213738EDA5AD4AFC261867626ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5311CEADBF207FF3DEECDC5946C64882;
+			remoteInfo = VirgilCryptoFoundation;
+		};
+		B293E4B00F344B98C617B00E1761F37A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C710066F044BC68BAA8FAFEEC7089AF;
+			remoteInfo = VirgilSDK;
+		};
+		C822B3FE8DD078EDFD29F77088973A13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27865AF1C1942627E7CB060EB758FFBB;
+			remoteInfo = VirgilCrypto;
+		};
+		E768AC4CE442FB3A548A13D4F9ACDAEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2798278EB199E9E60DD57FE7E3EBF82;
+			remoteInfo = ClaySDK;
+		};
+		EDCE91586FDAAFBF70A9265B5CBBB5B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5311CEADBF207FF3DEECDC5946C64882;
+			remoteInfo = VirgilCryptoFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0000752ADC4A024B1FF470575E23EA41 /* KeySerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeySerializer.swift; path = VirgilCryptoFoundation/KeySerializer.swift; sourceTree = "<group>"; };
+		002ED02F86B4FA2ACDC8EAF9C64B7861 /* EccPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EccPrivateKey.swift; path = VirgilCryptoFoundation/EccPrivateKey.swift; sourceTree = "<group>"; };
+		00E6F20D26832CE18DBBD791A800009F /* VirgilSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VirgilSDK-Info.plist"; sourceTree = "<group>"; };
+		027496F2F20138134D5DC33608A2ED43 /* CipherAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherAuth.swift; path = VirgilCryptoFoundation/CipherAuth.swift; sourceTree = "<group>"; };
+		03684BF8133B853A024248DB24E4C96C /* CloudKeyStorage+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CloudKeyStorage+Obj-C.swift"; path = "Source/Keyknox/CloudKeyStorage/CloudKeyStorage+Obj-C.swift"; sourceTree = "<group>"; };
+		03BEC2542EB7E3D3F558D76F6D3C1A94 /* AlgInfoSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgInfoSerializer.swift; path = VirgilCryptoFoundation/AlgInfoSerializer.swift; sourceTree = "<group>"; };
+		03E34AC0EA134535461CE07BE8B1CE12 /* MessageInfoCustomParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInfoCustomParams.swift; path = VirgilCryptoFoundation/MessageInfoCustomParams.swift; sourceTree = "<group>"; };
+		04D4435BA7A71322587A4E6EF1C05CD4 /* CipherState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherState.swift; path = VirgilCryptoFoundation/CipherState.swift; sourceTree = "<group>"; };
+		05D0F3736AFFF1BB8BDC500085EB5CFB /* ReachabilityProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReachabilityProtocol.swift; path = Source/BaseClient/Networking/Reachability/ReachabilityProtocol.swift; sourceTree = "<group>"; };
+		08360AFD541A7AC6366247C85D5ACF97 /* VirgilCrypto+Signatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VirgilCrypto+Signatures.swift"; path = "Source/VirgilCrypto/VirgilCrypto+Signatures.swift"; sourceTree = "<group>"; };
+		083A4720A85970A9CC5BFC6FEBD8263E /* Asn1rd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asn1rd.swift; path = VirgilCryptoFoundation/Asn1rd.swift; sourceTree = "<group>"; };
+		0B7F6DFB83798ACEAA28CA24DC5C0CD3 /* CompoundPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundPrivateKey.swift; path = VirgilCryptoFoundation/CompoundPrivateKey.swift; sourceTree = "<group>"; };
+		0BA595AB24C2DF4AFAC01C81B24FEAC7 /* Ecc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ecc.swift; path = VirgilCryptoFoundation/Ecc.swift; sourceTree = "<group>"; };
+		0C35350A22A58AE339F7308DFD4A5A9B /* CardManagerParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardManagerParams.swift; path = Source/Cards/CardManager/CardManagerParams.swift; sourceTree = "<group>"; };
+		0C823DE3C5901AEA0424CFCE24770D2E /* Aes256Gcm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aes256Gcm.swift; path = VirgilCryptoFoundation/Aes256Gcm.swift; sourceTree = "<group>"; };
+		0CA89054E32FB80ADB8EEEE1F9784702 /* JwtGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JwtGenerator.swift; path = Source/JsonWebToken/JwtGenerator.swift; sourceTree = "<group>"; };
+		0CC95E76ADB1C43726D121A4F398EFEA /* VirgilSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VirgilSDK-umbrella.h"; sourceTree = "<group>"; };
+		0D4DC4F53CF4E9DC57738DFA88C45674 /* GeneratorJwtProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeneratorJwtProvider.swift; path = Source/JsonWebToken/AccessProviders/GeneratorJwtProvider.swift; sourceTree = "<group>"; };
+		0DBA4ABB20ABD352DE541C92C3797E33 /* Pkcs5Pbes2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pkcs5Pbes2.swift; path = VirgilCryptoFoundation/Pkcs5Pbes2.swift; sourceTree = "<group>"; };
+		0DFA5DB0671088F3A6B8181FD1AC290D /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Source/Utils/Log.swift; sourceTree = "<group>"; };
+		0E536C9C2E23AEDF064B489E13AC6A4D /* VirgilCrypto+Encryption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VirgilCrypto+Encryption.swift"; path = "Source/VirgilCrypto/VirgilCrypto+Encryption.swift"; sourceTree = "<group>"; };
+		10701DD47B49B4F652075E50717EECC0 /* AlgId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgId.swift; path = VirgilCryptoFoundation/AlgId.swift; sourceTree = "<group>"; };
+		113311817BD2F54E7CC315FE1DB3298B /* VirgilCrypto+Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VirgilCrypto+Random.swift"; path = "Source/VirgilCrypto/VirgilCrypto+Random.swift"; sourceTree = "<group>"; };
+		127E86EE37EAF4085EF47A75A79FA4EE /* Kem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kem.swift; path = VirgilCryptoFoundation/Kem.swift; sourceTree = "<group>"; };
+		12C9211A28AF95B94B320E472827E50A /* SQLiteDB+GenericExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SQLiteDB+GenericExtension.swift"; path = "Source/SQLite/SQLiteDB+GenericExtension.swift"; sourceTree = "<group>"; };
+		155A5111D420503D1330CB6F22503A72 /* KeyAsn1Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyAsn1Serializer.swift; path = VirgilCryptoFoundation/KeyAsn1Serializer.swift; sourceTree = "<group>"; };
+		16CD220149055CEC04A26656FF4579D9 /* VirgilCrypto-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VirgilCrypto-Info.plist"; sourceTree = "<group>"; };
+		17DD492095A6D6C00636D0671F58E7B4 /* KeyMaterialRng.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyMaterialRng.swift; path = VirgilCryptoFoundation/KeyMaterialRng.swift; sourceTree = "<group>"; };
+		17DF824E0022203D778F0B898D463ADB /* KeychainQueryOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainQueryOptions.swift; path = Source/KeychainStorage/KeychainQueryOptions.swift; sourceTree = "<group>"; };
+		18DFCDE853B25AE59D72530D19B5280E /* FoundationImplementation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationImplementation.swift; path = VirgilCryptoFoundation/FoundationImplementation.swift; sourceTree = "<group>"; };
+		1AADA591743FA48C22EE1053CCEC2D40 /* HttpConnectionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnectionProtocol.swift; path = Source/BaseClient/Networking/HttpConnectionProtocol.swift; sourceTree = "<group>"; };
+		1BB1342C1A8AF97AB3045E6986E966FC /* Kdf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kdf.swift; path = VirgilCryptoFoundation/Kdf.swift; sourceTree = "<group>"; };
+		1CE529460312FB2637B56B4B780E5118 /* VirgilSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VirgilSDK; path = VirgilSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D04D9D413AAAB1E87A8F603D189BF77 /* KeyAlgFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyAlgFactory.swift; path = VirgilCryptoFoundation/KeyAlgFactory.swift; sourceTree = "<group>"; };
+		1D29AAFBAB37031F8BE2C3575E4A5528 /* KeyPairType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyPairType.swift; path = Source/KeyPairType.swift; sourceTree = "<group>"; };
+		1D64BDE18779D8AD4189346F15BD3B6C /* CardSignature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardSignature.swift; path = Source/Cards/CardSignature.swift; sourceTree = "<group>"; };
+		1F3A189B8D6DC85BC987B613A68729BC /* KeyDeserializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyDeserializer.swift; path = VirgilCryptoFoundation/KeyDeserializer.swift; sourceTree = "<group>"; };
+		21795379E0B750A358DA744483C361BD /* RsaPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RsaPrivateKey.swift; path = VirgilCryptoFoundation/RsaPrivateKey.swift; sourceTree = "<group>"; };
+		23E960D89ED5019F177D76BC9059B9C3 /* EccAlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EccAlgInfo.swift; path = VirgilCryptoFoundation/EccAlgInfo.swift; sourceTree = "<group>"; };
+		246C980D07D97A6F65660D98727C3E08 /* SignerInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignerInfo.swift; path = VirgilCryptoFoundation/SignerInfo.swift; sourceTree = "<group>"; };
+		25792B3FA5CC85A1DAD78E802DCA1B3A /* HybridKeyAlg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HybridKeyAlg.swift; path = VirgilCryptoFoundation/HybridKeyAlg.swift; sourceTree = "<group>"; };
+		26568343B0484562B1F83EBA1BED8CA1 /* VSCCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = VSCCommon.xcframework; path = "VSCCrypto-XCFrameworks/VSCCommon.xcframework"; sourceTree = "<group>"; };
+		265A5DA42EA3539B4290B91679F7E467 /* PasswordRecipientInfoList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRecipientInfoList.swift; path = VirgilCryptoFoundation/PasswordRecipientInfoList.swift; sourceTree = "<group>"; };
+		268EA2F073F582A2D997E3A29EA5FC10 /* SaltedKdfAlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SaltedKdfAlgInfo.swift; path = VirgilCryptoFoundation/SaltedKdfAlgInfo.swift; sourceTree = "<group>"; };
+		26CAE58668757C153600821876AE16DF /* Pods-Greet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Greet.modulemap"; sourceTree = "<group>"; };
+		281DD67E261CDB6F7E6FC0EC2642941E /* CallbackJwtProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallbackJwtProvider.swift; path = Source/JsonWebToken/AccessProviders/CallbackJwtProvider.swift; sourceTree = "<group>"; };
+		283A59DAEA73AFDF704C9185B1D90FC7 /* AccessToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessToken.swift; path = Source/JsonWebToken/Protocols/AccessToken.swift; sourceTree = "<group>"; };
+		284FF26F884CCB4C24A380B62AF0A50F /* RawCardContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawCardContent.swift; path = Source/Cards/Client/Models/RawCardContent.swift; sourceTree = "<group>"; };
+		2850A2E416A0730ED055B6F1A5B9F996 /* Sha384.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sha384.swift; path = VirgilCryptoFoundation/Sha384.swift; sourceTree = "<group>"; };
+		2BD8B9DB759E33971CAEA84D3F5DF8C9 /* KeyEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyEntry.swift; path = Source/KeychainStorage/KeyEntry.swift; sourceTree = "<group>"; };
+		2BED89A112B52F18CF0FBB9CAD105542 /* VirgilPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirgilPublicKey.swift; path = Source/VirgilPublicKey.swift; sourceTree = "<group>"; };
+		2DFA11D2B4EBA0AD7C45BC31E66BA092 /* PbeAlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PbeAlgInfo.swift; path = VirgilCryptoFoundation/PbeAlgInfo.swift; sourceTree = "<group>"; };
+		2E0CA5416C68D00D469A680EFFB9EADE /* KeyPairType+Convert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyPairType+Convert.swift"; path = "Source/KeyPairType+Convert.swift"; sourceTree = "<group>"; };
+		2E872A534DAB0ABE832A74DB0B44C67E /* MessageInfoEditor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInfoEditor.swift; path = VirgilCryptoFoundation/MessageInfoEditor.swift; sourceTree = "<group>"; };
+		2EA614476E5D0CFFAF220DDE85766824 /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Random.swift; path = VirgilCryptoFoundation/Random.swift; sourceTree = "<group>"; };
+		2F7CD0B2B172E9EB329D91E277294175 /* Pkcs8Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pkcs8Serializer.swift; path = VirgilCryptoFoundation/Pkcs8Serializer.swift; sourceTree = "<group>"; };
+		2FD57AB3AE270370266ABB903883A57F /* CardClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardClient.swift; path = Source/Cards/Client/CardClient.swift; sourceTree = "<group>"; };
+		30A1805CD1B3C94927AB1E1BED56B631 /* BuiltInTypesSQLiteExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuiltInTypesSQLiteExtension.swift; path = Source/SQLite/BuiltInTypesSQLiteExtension.swift; sourceTree = "<group>"; };
+		30A32506A1C0D6B43F50116B1445BE8B /* VirgilSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VirgilSDK-prefix.pch"; sourceTree = "<group>"; };
+		30AB3A82C66AD15C24AB614100C18480 /* VirgilCrypto+Impl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VirgilCrypto+Impl.swift"; path = "Source/VirgilCrypto/VirgilCrypto+Impl.swift"; sourceTree = "<group>"; };
+		32901C1C83B9C9920B6ABFBD75B50DB7 /* Data+hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+hex.swift"; path = "Source/Utils/Data+hex.swift"; sourceTree = "<group>"; };
+		32AC3D3B2CEB2D16969958341A670CA4 /* VirgilCrypto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VirgilCrypto-dummy.m"; sourceTree = "<group>"; };
+		33118BEF3C3693CA029B5E38206BF055 /* CardManager+StaticExport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CardManager+StaticExport.swift"; path = "Source/Cards/CardManager/CardManager+StaticExport.swift"; sourceTree = "<group>"; };
+		3385E546EACE486264C8E606D7AE3AA0 /* VirgilCrypto-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VirgilCrypto-umbrella.h"; sourceTree = "<group>"; };
+		357D748789C276962797A787E1CA8C35 /* SandboxedKeychainStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SandboxedKeychainStorage.swift; path = Source/KeychainStorage/SandboxedKeychainStorage.swift; sourceTree = "<group>"; };
+		3600293C66624068FE16FFDAD9072D1A /* KeyAlg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyAlg.swift; path = VirgilCryptoFoundation/KeyAlg.swift; sourceTree = "<group>"; };
+		37798948EC6019AFE58F9A3A0AC8525E /* VirgilCrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VirgilCrypto.debug.xcconfig; sourceTree = "<group>"; };
+		38A5CF1D0210738BAE9BD1984B5C15F5 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = VirgilCryptoFoundation/Cipher.swift; sourceTree = "<group>"; };
+		3911AAB3788A6ABA60DE00B44D047627 /* CtrDrbg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CtrDrbg.swift; path = VirgilCryptoFoundation/CtrDrbg.swift; sourceTree = "<group>"; };
+		39625794A1907EAD34C03FA0889A3501 /* Hash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hash.swift; path = VirgilCryptoFoundation/Hash.swift; sourceTree = "<group>"; };
+		39986E82442155BE5F6B70EE211C860D /* Pods-Greet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Greet-Info.plist"; sourceTree = "<group>"; };
+		39C09E9A02420D400A009EF87F34F5D3 /* Pem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pem.swift; path = VirgilCryptoFoundation/Pem.swift; sourceTree = "<group>"; };
+		3BB6B19AEE2A0F63DF97FF9578EE1BF1 /* Mac.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mac.swift; path = VirgilCryptoFoundation/Mac.swift; sourceTree = "<group>"; };
+		3CFD1155F57196043FCDEB4D1C07C8E6 /* VirgilCryptoFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VirgilCryptoFoundation.debug.xcconfig; sourceTree = "<group>"; };
+		3D34FA64EE2FDC16FF1AE39007253C2B /* MessageInfoFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInfoFooter.swift; path = VirgilCryptoFoundation/MessageInfoFooter.swift; sourceTree = "<group>"; };
+		3E6F104BA519A7B8932C4DC967893A96 /* KeyknoxCryptoProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxCryptoProtocol.swift; path = Source/Keyknox/Crypto/KeyknoxCryptoProtocol.swift; sourceTree = "<group>"; };
+		3EE76B197D72526D867242787B4FC7CE /* CompoundKeyAlg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundKeyAlg.swift; path = VirgilCryptoFoundation/CompoundKeyAlg.swift; sourceTree = "<group>"; };
+		3F8F5C9992C6D603536D14021275B5B7 /* KeyknoxManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxManager.swift; path = Source/Keyknox/KeyknoxManager/KeyknoxManager.swift; sourceTree = "<group>"; };
+		3FECFA35AEA8CE839D9FDE2B0CA976E1 /* RawServiceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawServiceError.swift; path = Source/BaseClient/Models/RawServiceError.swift; sourceTree = "<group>"; };
+		40F8F9B770A2B4F063CC6546FBEE5DAA /* CachingJwtProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachingJwtProvider.swift; path = Source/JsonWebToken/AccessProviders/CachingJwtProvider.swift; sourceTree = "<group>"; };
+		41D6D234B903AA484B74AEE709D0A793 /* VirgilCrypto */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VirgilCrypto; path = VirgilCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4479DA3A88E5AB8E09889022B81DE508 /* AlgFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgFactory.swift; path = VirgilCryptoFoundation/AlgFactory.swift; sourceTree = "<group>"; };
+		451C5068DDD6D9A99EC08B894F02EB67 /* MessageInfoFooterSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInfoFooterSerializer.swift; path = VirgilCryptoFoundation/MessageInfoFooterSerializer.swift; sourceTree = "<group>"; };
+		45F89BBA33F1F4F68ACE0BD0C7E7FDE4 /* MessageInfoDerSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInfoDerSerializer.swift; path = VirgilCryptoFoundation/MessageInfoDerSerializer.swift; sourceTree = "<group>"; };
+		4606C6AE098EA81222216A068CB3FE07 /* KeyAsn1Deserializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyAsn1Deserializer.swift; path = VirgilCryptoFoundation/KeyAsn1Deserializer.swift; sourceTree = "<group>"; };
+		470AC9299A25369DD87C0924F4A85C15 /* Aes256Cbc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aes256Cbc.swift; path = VirgilCryptoFoundation/Aes256Cbc.swift; sourceTree = "<group>"; };
+		47E4278AD6E32AB73AF985A12839AC37 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/BaseClient/Networking/Request.swift; sourceTree = "<group>"; };
+		49268725499A838E17B5F613E8A6DC0C /* CipherInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherInfo.swift; path = VirgilCryptoFoundation/CipherInfo.swift; sourceTree = "<group>"; };
+		4BCD984D3D37E23CBF6DD0ABE65BEF25 /* KeychainUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainUtils.swift; path = Source/Keyknox/SyncKeyStorage/KeychainUtils.swift; sourceTree = "<group>"; };
+		4CA25EE5ACF537E25D04A81621512516 /* ExpBackoffRetry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpBackoffRetry.swift; path = Source/BaseClient/Retries/ExpBackoffRetry.swift; sourceTree = "<group>"; };
+		4D37D9537152550694421DEF9F8FF960 /* Pods-Greet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Greet-dummy.m"; sourceTree = "<group>"; };
+		4DF63ACA861D2BA0DFD2426D3D150AB8 /* AuthDecrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthDecrypt.swift; path = VirgilCryptoFoundation/AuthDecrypt.swift; sourceTree = "<group>"; };
+		4E282E1F280C7A851D3C486DF367D486 /* Pods-Greet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Greet-umbrella.h"; sourceTree = "<group>"; };
+		4F19C885C0F32AFB554B23530BCB249C /* JwtHeaderContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JwtHeaderContent.swift; path = Source/JsonWebToken/JwtHeaderContent.swift; sourceTree = "<group>"; };
+		52BA0E63E0DCD8470739CA73EF386CA9 /* CContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CContext.swift; path = VirgilCryptoFoundation/CContext.swift; sourceTree = "<group>"; };
+		53564652B66043CDD50EA6E95740BA05 /* VirgilCryptoFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VirgilCryptoFoundation-umbrella.h"; sourceTree = "<group>"; };
+		553326B7D56E8E6CDD5DE90AD839893D /* RawPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawPublicKey.swift; path = VirgilCryptoFoundation/RawPublicKey.swift; sourceTree = "<group>"; };
+		5622F35DB5416FB749688A4E6FEE51A0 /* Kdf1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kdf1.swift; path = VirgilCryptoFoundation/Kdf1.swift; sourceTree = "<group>"; };
+		56CDDB4CCC7AD00266179EA92F6450C9 /* KeychainStorageParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainStorageParams.swift; path = Source/KeychainStorage/KeychainStorageParams.swift; sourceTree = "<group>"; };
+		56D73ECA3E19B400E81DFCA17E99FA08 /* AlgInfoDerSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgInfoDerSerializer.swift; path = VirgilCryptoFoundation/AlgInfoDerSerializer.swift; sourceTree = "<group>"; };
+		5704EEBD66948119EE56443057468344 /* VirgilSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VirgilSDK.release.xcconfig; sourceTree = "<group>"; };
+		578B3C8342A70223641CB41F6272ECA3 /* OidId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OidId.swift; path = VirgilCryptoFoundation/OidId.swift; sourceTree = "<group>"; };
+		58AA4BF8B502F0C8897C790BA3F8C7EF /* VirgilCrypto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VirgilCrypto.modulemap; sourceTree = "<group>"; };
+		59C7408E7E9C3D5AF05AED7DB1A017F2 /* Hkdf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hkdf.swift; path = VirgilCryptoFoundation/Hkdf.swift; sourceTree = "<group>"; };
+		5AC5EF5AB6342CF05896AF261F06B95D /* KeyCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCipher.swift; path = VirgilCryptoFoundation/KeyCipher.swift; sourceTree = "<group>"; };
+		5B64AC536289D337DF62653D3104A97A /* KeyknoxManagerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxManagerError.swift; path = Source/Keyknox/KeyknoxManager/KeyknoxManagerError.swift; sourceTree = "<group>"; };
+		5B886E1925C0B6DA3C3B57EB69A19D94 /* VSCCrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VSCCrypto.debug.xcconfig; sourceTree = "<group>"; };
+		5D2A9ADC88E22ADAD5345BDE9C20BC6B /* GroupSessionMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupSessionMessage.swift; path = VirgilCryptoFoundation/GroupSessionMessage.swift; sourceTree = "<group>"; };
+		5D56F1C0F254D9004F84533A4A882DC9 /* CloudKeyStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudKeyStorage.swift; path = Source/Keyknox/CloudKeyStorage/CloudKeyStorage.swift; sourceTree = "<group>"; };
+		5D9193848FE4C914CE58A49E2245496A /* Ed25519.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ed25519.swift; path = VirgilCryptoFoundation/Ed25519.swift; sourceTree = "<group>"; };
+		5E1333343D6B48F430A8BEF87A65E8B0 /* VirgilCardVerifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirgilCardVerifier.swift; path = Source/Cards/Verification/VirgilCardVerifier.swift; sourceTree = "<group>"; };
+		5EB7750858934A6A92F30056A62C88C7 /* CardVerifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardVerifier.swift; path = Source/Cards/Verification/CardVerifier.swift; sourceTree = "<group>"; };
+		60D3081964EAAE9B3F4A5DE132EFF2D8 /* JwtSignatureContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JwtSignatureContent.swift; path = Source/JsonWebToken/JwtSignatureContent.swift; sourceTree = "<group>"; };
+		61953052CE37129C844402ED4EEDFD68 /* KeySigner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeySigner.swift; path = VirgilCryptoFoundation/KeySigner.swift; sourceTree = "<group>"; };
+		62B8D98F29EAEEFCD89940473B2BC721 /* NetworkRetryOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkRetryOperation.swift; path = Source/BaseClient/Networking/NetworkRetryOperation.swift; sourceTree = "<group>"; };
+		630ED711BBAF15829997161AAE11D160 /* Mutex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mutex.swift; path = Source/Utils/Mutex.swift; sourceTree = "<group>"; };
+		6436E0FD097C16C93E0423FF1749AFBE /* RawSignedModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawSignedModel.swift; path = Source/Cards/Client/Models/RawSignedModel.swift; sourceTree = "<group>"; };
+		643DE7F0A273EA85FA7A63F21CD7C393 /* FoundationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationError.swift; path = VirgilCryptoFoundation/FoundationError.swift; sourceTree = "<group>"; };
+		64F10D8F3990FAC759F3BAAFAE52348A /* Key.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Key.swift; path = VirgilCryptoFoundation/Key.swift; sourceTree = "<group>"; };
+		6696F942E1AB6712CDF13CEEB6D67290 /* CipherAuthInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherAuthInfo.swift; path = VirgilCryptoFoundation/CipherAuthInfo.swift; sourceTree = "<group>"; };
+		66DC1DF4916F8EB9E84A1D51B752370B /* VirgilCrypto+AuthEncrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VirgilCrypto+AuthEncrypt.swift"; path = "Source/VirgilCrypto/VirgilCrypto+AuthEncrypt.swift"; sourceTree = "<group>"; };
+		693CCE1B3B827D232208CEDB6EB66AE1 /* ClaySDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "ClaySDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		69DD6961603032A471B6532E280A8594 /* KeyPairType+RSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyPairType+RSA.swift"; path = "Source/KeyPairType+RSA.swift"; sourceTree = "<group>"; };
+		6A60F53B7E947E516439796F52188DFF /* Rsa.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rsa.swift; path = VirgilCryptoFoundation/Rsa.swift; sourceTree = "<group>"; };
+		6ADE4A04DC8E15DC9C5EF9A2ECFD65D4 /* PaddingParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaddingParams.swift; path = VirgilCryptoFoundation/PaddingParams.swift; sourceTree = "<group>"; };
+		6BD531A30ACA562F31E4A810E8943BEA /* VirgilCrypto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirgilCrypto.swift; path = Source/VirgilCrypto/VirgilCrypto.swift; sourceTree = "<group>"; };
+		6F0665D5B8C1347CA44E9C5552B681CE /* CardClient+Queries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CardClient+Queries.swift"; path = "Source/Cards/Client/CardClient+Queries.swift"; sourceTree = "<group>"; };
+		701925783DE208CE7348131CD61DE09A /* ServiceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceRequest.swift; path = Source/BaseClient/Networking/ServiceRequest.swift; sourceTree = "<group>"; };
+		707347CBE153CC2A70E8B5EC35420714 /* VirgilSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VirgilSDK.debug.xcconfig; sourceTree = "<group>"; };
+		7100FDAF8A26550864BCDC28F7D29B19 /* CardManager+Parse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CardManager+Parse.swift"; path = "Source/Cards/CardManager/CardManager+Parse.swift"; sourceTree = "<group>"; };
+		71F9957183B7F4E773D228E91BDA002F /* SQLiteStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteStatement.swift; path = Source/SQLite/SQLiteStatement.swift; sourceTree = "<group>"; };
+		72BEA85EFD4E1DC8D634570288D60350 /* Alg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alg.swift; path = VirgilCryptoFoundation/Alg.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		732108EED06E5FA13AA0AAB5A5F94FD3 /* PasswordRecipientInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRecipientInfo.swift; path = VirgilCryptoFoundation/PasswordRecipientInfo.swift; sourceTree = "<group>"; };
+		732D19BE2162318E4E29A220F4573874 /* FakeRandom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FakeRandom.swift; path = VirgilCryptoFoundation/FakeRandom.swift; sourceTree = "<group>"; };
+		73CA2236AF6C6100A4A6515C4FBAEB54 /* BrainkeyClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrainkeyClient.swift; path = VirgilCryptoFoundation/BrainkeyClient.swift; sourceTree = "<group>"; };
+		751D881FA3443E5ABDA3C247B13C2AB2 /* PrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrivateKey.swift; path = VirgilCryptoFoundation/PrivateKey.swift; sourceTree = "<group>"; };
+		761D314DF2A87FA901A4A836F00FC3AA /* CardManager+Export.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CardManager+Export.swift"; path = "Source/Cards/CardManager/CardManager+Export.swift"; sourceTree = "<group>"; };
+		77F9071068BDE3D6694D0991F333253F /* VirgilCryptoFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VirgilCryptoFoundation.release.xcconfig; sourceTree = "<group>"; };
+		7985A09F1061AEBC1E483286D3A7DB9C /* ConstAccessTokenProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstAccessTokenProvider.swift; path = Source/JsonWebToken/AccessProviders/ConstAccessTokenProvider.swift; sourceTree = "<group>"; };
+		79F3A6AECDE0CEBCC59DEEC04CD56625 /* SyncKeyStorage+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SyncKeyStorage+Obj-C.swift"; path = "Source/Keyknox/SyncKeyStorage/SyncKeyStorage+Obj-C.swift"; sourceTree = "<group>"; };
+		7A3C7F35C6C58B37D004A749BCA4A4B0 /* SyncKeyStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyncKeyStorage.swift; path = Source/Keyknox/SyncKeyStorage/SyncKeyStorage.swift; sourceTree = "<group>"; };
+		7B69103E4B589B98BD3331906B56E148 /* CardManager+Queries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CardManager+Queries.swift"; path = "Source/Cards/CardManager/CardManager+Queries.swift"; sourceTree = "<group>"; };
+		7CFA22CE3704CBFF3870E145063201B0 /* AlgInfoDerDeserializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgInfoDerDeserializer.swift; path = VirgilCryptoFoundation/AlgInfoDerDeserializer.swift; sourceTree = "<group>"; };
+		7D0E2CFAD46AF5F9A8BCDE9247E0DE4F /* AlgInfoDeserializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgInfoDeserializer.swift; path = VirgilCryptoFoundation/AlgInfoDeserializer.swift; sourceTree = "<group>"; };
+		7DC3C92E846129BD1119759A3175DB82 /* VirgilCrypto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VirgilCrypto-prefix.pch"; sourceTree = "<group>"; };
+		7DD4B166F632E97E6CE0A7279AC4F312 /* RecipientCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecipientCipher.swift; path = VirgilCryptoFoundation/RecipientCipher.swift; sourceTree = "<group>"; };
+		7E7969396BDB77D848074524711A2EB7 /* Signer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signer.swift; path = VirgilCryptoFoundation/Signer.swift; sourceTree = "<group>"; };
+		7F3DC0E09ADBF4D4E2E276A816D456D8 /* RetryProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryProtocol.swift; path = Source/BaseClient/Retries/RetryProtocol.swift; sourceTree = "<group>"; };
+		7FE270E7952E06CC18A6CF093F6FB1C6 /* VirgilCrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VirgilCrypto.release.xcconfig; sourceTree = "<group>"; };
+		80B7DE9C56411FB7BC69FFA4F14D0741 /* VersionUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersionUtils.swift; path = Source/Utils/VersionUtils.swift; sourceTree = "<group>"; };
+		81F8C9E6D77C344E8815E73522BCE5FA /* PublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublicKey.swift; path = VirgilCryptoFoundation/PublicKey.swift; sourceTree = "<group>"; };
+		8326A8852BC96F6DD72FF0B19CBA6D36 /* VirgilCrypto+KeyGeneration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VirgilCrypto+KeyGeneration.swift"; path = "Source/VirgilCrypto/VirgilCrypto+KeyGeneration.swift"; sourceTree = "<group>"; };
+		86B97344F06CD212D21B210AAD76B195 /* CloudEntrySerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudEntrySerializer.swift; path = Source/Keyknox/CloudKeyStorage/CloudEntrySerializer.swift; sourceTree = "<group>"; };
+		8738B12C07B2973848D38BCDB55AA786 /* KeyknoxValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxValue.swift; path = Source/Keyknox/Client/Models/KeyknoxValue.swift; sourceTree = "<group>"; };
+		8751B1E3F13BE60C8547F04DB2B311C3 /* ComputeSharedKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComputeSharedKey.swift; path = VirgilCryptoFoundation/ComputeSharedKey.swift; sourceTree = "<group>"; };
+		87ADC7722797CA243E972664CA4E41B5 /* ClaySDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = ClaySDK.xcframework; sourceTree = "<group>"; };
+		87D18312258789A38DE5352709190E12 /* CipherAlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherAlgInfo.swift; path = VirgilCryptoFoundation/CipherAlgInfo.swift; sourceTree = "<group>"; };
+		87F6BE42CEB19BCB2013EEA2D548EA77 /* Whitelist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Whitelist.swift; path = Source/Cards/Verification/Whitelist.swift; sourceTree = "<group>"; };
+		884231652F0BED5E6F3210EB169D41CA /* VSCFoundation.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = VSCFoundation.xcframework; path = "VSCCrypto-XCFrameworks/VSCFoundation.xcframework"; sourceTree = "<group>"; };
+		88DA829D6348287166255C6E19605032 /* VSCCrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VSCCrypto.release.xcconfig; sourceTree = "<group>"; };
+		8AB4C5AAB4E5F5FD8C80852522FE32FF /* CardClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardClientProtocol.swift; path = Source/Cards/Client/CardClientProtocol.swift; sourceTree = "<group>"; };
+		8F2ED31F299488395AA5CC9455973C8F /* KeychainEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainEntry.swift; path = Source/KeychainStorage/KeychainEntry.swift; sourceTree = "<group>"; };
+		90C5510E00FD8D4D96D668810918467B /* VerifierCredentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifierCredentials.swift; path = Source/Cards/Verification/VerifierCredentials.swift; sourceTree = "<group>"; };
+		91D2CB26B253F0698243F84B19239D89 /* VirgilCryptoFoundation */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VirgilCryptoFoundation; path = VirgilCryptoFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F8F17541D0EDA6F7F6C8D0C79F474A /* VirgilCrypto+KeyManagement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VirgilCrypto+KeyManagement.swift"; path = "Source/VirgilCrypto/VirgilCrypto+KeyManagement.swift"; sourceTree = "<group>"; };
+		9424521AD586D7E99B9E3AA3C11110BA /* RawSignature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawSignature.swift; path = Source/Cards/Client/Models/RawSignature.swift; sourceTree = "<group>"; };
+		944F14EE03A73477B1B02DE0E7442D63 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Source/BaseClient/Networking/Reachability/Reachability.swift; sourceTree = "<group>"; };
+		94B9DA1A73B67E2750150065F2C03270 /* Decrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decrypt.swift; path = VirgilCryptoFoundation/Decrypt.swift; sourceTree = "<group>"; };
+		956B325137EE62CFEDE65EEFC4260122 /* AccessTokenProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessTokenProvider.swift; path = Source/JsonWebToken/Protocols/AccessTokenProvider.swift; sourceTree = "<group>"; };
+		9605BB27CE36121900D2B0B8080B70D1 /* VirgilCryptoError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirgilCryptoError.swift; path = Source/VirgilCryptoError.swift; sourceTree = "<group>"; };
+		96E8722A05A9078FFBFC3F9481ED808E /* NetworkOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkOperation.swift; path = Source/BaseClient/Networking/NetworkOperation.swift; sourceTree = "<group>"; };
+		99620E94F013495CD12595C805E6E125 /* EntropySource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntropySource.swift; path = VirgilCryptoFoundation/EntropySource.swift; sourceTree = "<group>"; };
+		9967AD54FD104F7F54CD4C763CF33A3D /* Data+base64Url.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+base64Url.swift"; path = "Source/Utils/Data+base64Url.swift"; sourceTree = "<group>"; };
+		99BAD6F3FC9E4A1AECDB10D9421A51D1 /* GroupSessionTicket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupSessionTicket.swift; path = VirgilCryptoFoundation/GroupSessionTicket.swift; sourceTree = "<group>"; };
+		9A10DF7CB835F60562A3F158ABA96AA1 /* HybridPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HybridPrivateKey.swift; path = VirgilCryptoFoundation/HybridPrivateKey.swift; sourceTree = "<group>"; };
+		9A12BA0D248F8DA00D7901E7C7AEFB10 /* VirgilCryptoFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VirgilCryptoFoundation-Info.plist"; sourceTree = "<group>"; };
+		9C75E963E495D42975804843F636E92C /* BrainkeyServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrainkeyServer.swift; path = VirgilCryptoFoundation/BrainkeyServer.swift; sourceTree = "<group>"; };
+		9D2AD5837CC8C8E6F3BCBC7489CC6477 /* SyncKeyStorage+SyncHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SyncKeyStorage+SyncHelpers.swift"; path = "Source/Keyknox/SyncKeyStorage/SyncKeyStorage+SyncHelpers.swift"; sourceTree = "<group>"; };
+		9D8AC2E98D0A623F4083F9262987420C /* GenericOperation+Dependencies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "GenericOperation+Dependencies.swift"; path = "Source/Utils/Operation/GenericOperation+Dependencies.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DAB6F1CF52CF04129B17DD593B518E5 /* Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = VirgilCryptoFoundation/Base64.swift; sourceTree = "<group>"; };
+		9DE0EE5B4417DCA1B37A031B7241B385 /* ModelSigner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelSigner.swift; path = Source/Cards/ModelSigner.swift; sourceTree = "<group>"; };
+		A10A1786CEDC801A15EAEE86C32FC0AF /* KeyknoxManager+Queries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyknoxManager+Queries.swift"; path = "Source/Keyknox/KeyknoxManager/KeyknoxManager+Queries.swift"; sourceTree = "<group>"; };
+		A129B874CE8ECF9E15DF872E9A17407E /* Verifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Verifier.swift; path = VirgilCryptoFoundation/Verifier.swift; sourceTree = "<group>"; };
+		A1710CBCF1DFBADD72C5870960F4AA6F /* Sec1Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sec1Serializer.swift; path = VirgilCryptoFoundation/Sec1Serializer.swift; sourceTree = "<group>"; };
+		A2479157E6CEF3F57A757CECB1C53C12 /* KeyknoxManager+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyknoxManager+Obj-C.swift"; path = "Source/Keyknox/KeyknoxManager/KeyknoxManager+Obj-C.swift"; sourceTree = "<group>"; };
+		A2BDBC6C0269266AAD80BBF1DBE880A7 /* CompoundKeyAlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundKeyAlgInfo.swift; path = VirgilCryptoFoundation/CompoundKeyAlgInfo.swift; sourceTree = "<group>"; };
+		A318F7FF542FC3BC99DC6E9735C451A1 /* EccPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EccPublicKey.swift; path = VirgilCryptoFoundation/EccPublicKey.swift; sourceTree = "<group>"; };
+		A43F028400615E2A0635C644F68DF166 /* Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Source/Cards/Card.swift; sourceTree = "<group>"; };
+		A4977BE915D42E8E959A37F8CC766084 /* Curve25519.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curve25519.swift; path = VirgilCryptoFoundation/Curve25519.swift; sourceTree = "<group>"; };
+		A4A6ED877A899615FBE778705B4731DF /* Asn1wr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asn1wr.swift; path = VirgilCryptoFoundation/Asn1wr.swift; sourceTree = "<group>"; };
+		A4CB679C002C79D3C7DCE7BB6A3B4E65 /* BaseClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseClient.swift; path = Source/BaseClient/BaseClient.swift; sourceTree = "<group>"; };
+		A597C92FDC1C4B1D95CEC18F6FA181D3 /* CompoundPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundPublicKey.swift; path = VirgilCryptoFoundation/CompoundPublicKey.swift; sourceTree = "<group>"; };
+		A6D468D0FB05F53A60EAD5A8C6820CF4 /* KeyknoxClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxClient.swift; path = Source/Keyknox/Client/KeyknoxClient.swift; sourceTree = "<group>"; };
+		A722FD7132F403B83FEFB5EE15CFC83C /* KeyProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyProvider.swift; path = VirgilCryptoFoundation/KeyProvider.swift; sourceTree = "<group>"; };
+		A760C0C4E86A2E4B4960AB3CC4D491D6 /* Pods-Greet */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Greet"; path = Pods_Greet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85CF93D6556AE70B9190820C1D5473C /* Round5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Round5.swift; path = VirgilCryptoFoundation/Round5.swift; sourceTree = "<group>"; };
+		A8F2DE4F98740CA930388191546C0DF3 /* HttpConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpConnection.swift; path = Source/BaseClient/Networking/HttpConnection.swift; sourceTree = "<group>"; };
+		A9434D57FFBDE93E6197BFF83A8893C6 /* VirgilPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirgilPrivateKey.swift; path = Source/VirgilPrivateKey.swift; sourceTree = "<group>"; };
+		A98363463922B35CE8C43962F5ADC809 /* CloudKeyStorageProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudKeyStorageProtocol.swift; path = Source/Keyknox/CloudKeyStorage/CloudKeyStorageProtocol.swift; sourceTree = "<group>"; };
+		A98BB81A3AEA013CBB5B25134F25C4A0 /* VirgilCryptoFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VirgilCryptoFoundation.modulemap; sourceTree = "<group>"; };
+		AAB1A4E30BA9B146BE0936EC959EBE71 /* VirgilKeyPair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirgilKeyPair.swift; path = Source/VirgilKeyPair.swift; sourceTree = "<group>"; };
+		AAC128B951232B772CB3ACE65ECC8608 /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = VirgilCryptoFoundation/Padding.swift; sourceTree = "<group>"; };
+		ABBD9170C32D8B910D89EB458FCD9EDF /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Source/JsonWebToken/JWT.swift; sourceTree = "<group>"; };
+		AE9469A995A2704D1AB84FE1B445AF04 /* KeyRecipientInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyRecipientInfo.swift; path = VirgilCryptoFoundation/KeyRecipientInfo.swift; sourceTree = "<group>"; };
+		AF8DCDB7AC78913470ED445B0F482249 /* Kdf2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kdf2.swift; path = VirgilCryptoFoundation/Kdf2.swift; sourceTree = "<group>"; };
+		AFBCEEFE85C34B4FED66CC16E1354210 /* Pods-Greet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Greet.debug.xcconfig"; sourceTree = "<group>"; };
+		B02EF4FDAB9BF01B8923BE55F02EEF12 /* VirgilSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VirgilSDK-dummy.m"; sourceTree = "<group>"; };
+		B126709715968DEC0FC0B2B837AC6A7B /* Pods-Greet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Greet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B1E469820606738BD410197FF68C490B /* ClaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ClaySDK.release.xcconfig; sourceTree = "<group>"; };
+		B5C38C61B47DD86B42397363EE96767E /* MessageInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInfo.swift; path = VirgilCryptoFoundation/MessageInfo.swift; sourceTree = "<group>"; };
+		B5F76BB43C1A187242A9C5E4B2E9ABD6 /* CallbackOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallbackOperation.swift; path = Source/Utils/Operation/CallbackOperation.swift; sourceTree = "<group>"; };
+		B609204E92B615A68FD4061ECA3C510D /* KeyknoxKeyEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxKeyEntry.swift; path = Source/Keyknox/CloudKeyStorage/KeyknoxKeyEntry.swift; sourceTree = "<group>"; };
+		B7589CD3E5ACA0BABE0058B05440CDCB /* KeyknoxCrypto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxCrypto.swift; path = Source/Keyknox/Crypto/KeyknoxCrypto.swift; sourceTree = "<group>"; };
+		B9E5B50C5C5DCC3EC8C15D3FB949D9D7 /* OperationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationUtils.swift; path = Source/Utils/Operation/OperationUtils.swift; sourceTree = "<group>"; };
+		BBD69362A96E1563C1A8FD27342BFEB7 /* GroupMsgType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupMsgType.swift; path = VirgilCryptoFoundation/GroupMsgType.swift; sourceTree = "<group>"; };
+		BDD32E90E9D87E750EBCD9A4B19FFDC7 /* MessageInfoSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInfoSerializer.swift; path = VirgilCryptoFoundation/MessageInfoSerializer.swift; sourceTree = "<group>"; };
+		BEF28B0E47562C11243094E949170C57 /* HybridPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HybridPublicKey.swift; path = VirgilCryptoFoundation/HybridPublicKey.swift; sourceTree = "<group>"; };
+		BF0500B256BF890B1A54B6156ECCF87C /* Hmac.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hmac.swift; path = VirgilCryptoFoundation/Hmac.swift; sourceTree = "<group>"; };
+		C18715BB173692BE1A89A45B5C741035 /* TokenContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenContext.swift; path = Source/JsonWebToken/TokenContext.swift; sourceTree = "<group>"; };
+		C20ED32A9CE11F4C3DD231BCDA7E454B /* KeyInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyInfo.swift; path = VirgilCryptoFoundation/KeyInfo.swift; sourceTree = "<group>"; };
+		C25DD5ACF198586B7854838BD7E01260 /* SimpleAlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleAlgInfo.swift; path = VirgilCryptoFoundation/SimpleAlgInfo.swift; sourceTree = "<group>"; };
+		C2A9E93FF6E144117AB040A94EA39A82 /* Asn1Reader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asn1Reader.swift; path = VirgilCryptoFoundation/Asn1Reader.swift; sourceTree = "<group>"; };
+		C2EE2021EC1C8B020B2326391F8AF3DC /* HashBasedAlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashBasedAlgInfo.swift; path = VirgilCryptoFoundation/HashBasedAlgInfo.swift; sourceTree = "<group>"; };
+		C58DFB7C009D15A7A65409745DC4AB48 /* StreamUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamUtils.swift; path = Source/StreamUtils.swift; sourceTree = "<group>"; };
+		C626332C2D7726232082B039608F2F47 /* JwtBodyContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JwtBodyContent.swift; path = Source/JsonWebToken/JwtBodyContent.swift; sourceTree = "<group>"; };
+		C7A7DFF46A151C4ACB2E1331D8EB63E5 /* KeychainStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainStorage.swift; path = Source/KeychainStorage/KeychainStorage.swift; sourceTree = "<group>"; };
+		C8215F4322AFAE5EB3801B822995DD7D /* VirgilCryptoFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VirgilCryptoFoundation.h; path = VirgilCryptoFoundation/VirgilCryptoFoundation.h; sourceTree = "<group>"; };
+		C82D31AEE0CDA3A7BD93096F171B6B13 /* Asn1Writer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asn1Writer.swift; path = VirgilCryptoFoundation/Asn1Writer.swift; sourceTree = "<group>"; };
+		CD01483C387F939AFF471A5677E907CF /* Ecies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ecies.swift; path = VirgilCryptoFoundation/Ecies.swift; sourceTree = "<group>"; };
+		CD9B4C0DFD78C30DC17B5028E275FE93 /* AuthEncrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthEncrypt.swift; path = VirgilCryptoFoundation/AuthEncrypt.swift; sourceTree = "<group>"; };
+		CF85749EB88445EC50AEE8C8DEC732DD /* Encrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encrypt.swift; path = VirgilCryptoFoundation/Encrypt.swift; sourceTree = "<group>"; };
+		D193ED88F7F3CACF0F00BC6960B09A92 /* RawPrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawPrivateKey.swift; path = VirgilCryptoFoundation/RawPrivateKey.swift; sourceTree = "<group>"; };
+		D2B592014F61A0FA4FC630E0AA394B39 /* RandomPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomPadding.swift; path = VirgilCryptoFoundation/RandomPadding.swift; sourceTree = "<group>"; };
+		D3E0BBD4C161A6CE64CDEAEAE671A45E /* KeychainStorageProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainStorageProtocol.swift; path = Source/KeychainStorage/KeychainStorageProtocol.swift; sourceTree = "<group>"; };
+		D4075E9AC16EF2C1B5FD52E8C538D72D /* RetryChoice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryChoice.swift; path = Source/BaseClient/Retries/RetryChoice.swift; sourceTree = "<group>"; };
+		D513C2153FC4402DBB77CE09DD0D7F31 /* AlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgInfo.swift; path = VirgilCryptoFoundation/AlgInfo.swift; sourceTree = "<group>"; };
+		D5A084BF2F24CC696B5E6F8C3A123383 /* SignedDataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignedDataInfo.swift; path = VirgilCryptoFoundation/SignedDataInfo.swift; sourceTree = "<group>"; };
+		D5E44D34DDF600DEFD18EE87CDA87F27 /* GenericOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericOperation.swift; path = Source/Utils/Operation/GenericOperation.swift; sourceTree = "<group>"; };
+		D7E4720A7C306B4FFD01E1DA9B17566E /* Sha224.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sha224.swift; path = VirgilCryptoFoundation/Sha224.swift; sourceTree = "<group>"; };
+		D838D8B9CFD7639F0D13F35888B75C18 /* KeyknoxClientParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxClientParams.swift; path = Source/Keyknox/Client/KeyknoxClientParams.swift; sourceTree = "<group>"; };
+		D8F4EF34DE7254DC501D974BAA690389 /* VirgilAgentAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirgilAgentAdapter.swift; path = Source/BaseClient/Networking/VirgilAgentAdapter.swift; sourceTree = "<group>"; };
+		DA13ADC3266A287A260903C5E3BE2FBF /* FileSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystem.swift; path = Source/Utils/FileSystem.swift; sourceTree = "<group>"; };
+		DA366C908591771BE9B356451B9EE985 /* Asn1Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asn1Tag.swift; path = VirgilCryptoFoundation/Asn1Tag.swift; sourceTree = "<group>"; };
+		DB4B6C7E734DF46C806BAA95EE2AB51F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/BaseClient/Networking/Response.swift; sourceTree = "<group>"; };
+		DEB749A99C453CEAE5634A7E4950763E /* CloudEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudEntry.swift; path = Source/Keyknox/CloudKeyStorage/CloudEntry.swift; sourceTree = "<group>"; };
+		DEBF65A99562078ECBD88DFECAF34153 /* Oid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Oid.swift; path = VirgilCryptoFoundation/Oid.swift; sourceTree = "<group>"; };
+		DF8D63FC7F2C6D358508C07B1F6F13D6 /* SignerInfoList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignerInfoList.swift; path = VirgilCryptoFoundation/SignerInfoList.swift; sourceTree = "<group>"; };
+		E37285743CD2246B550950F29EC4E1E4 /* SaltedKdf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SaltedKdf.swift; path = VirgilCryptoFoundation/SaltedKdf.swift; sourceTree = "<group>"; };
+		E3A8973DF1AF8FC5C72BDAFF54A886A6 /* EntropyAccumulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntropyAccumulator.swift; path = VirgilCryptoFoundation/EntropyAccumulator.swift; sourceTree = "<group>"; };
+		E50FAE5859276F6B966EA12012947A95 /* Pkcs5Pbkdf2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pkcs5Pbkdf2.swift; path = VirgilCryptoFoundation/Pkcs5Pbkdf2.swift; sourceTree = "<group>"; };
+		E572912362629FF0321C36373EA8AD00 /* KeyknoxClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxClientProtocol.swift; path = Source/Keyknox/Client/KeyknoxClientProtocol.swift; sourceTree = "<group>"; };
+		E75DC136E3D756D5520C9331A9B900F1 /* HttpRequestAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpRequestAdapter.swift; path = Source/BaseClient/Networking/HttpRequestAdapter.swift; sourceTree = "<group>"; };
+		E77EB5A82FE8F2F8CE87E5B02F0A130F /* VSCCrypto-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "VSCCrypto-xcframeworks.sh"; sourceTree = "<group>"; };
+		E8321C32255EB5A1E06484EE53AA5E61 /* Pods-Greet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Greet.release.xcconfig"; sourceTree = "<group>"; };
+		E8CCBCB08621133EA36E858896A73450 /* Pods-Greet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Greet-acknowledgements.plist"; sourceTree = "<group>"; };
+		E9005EF60B4C2F781BD0316DD03BAE69 /* AsyncOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncOperation.swift; path = Source/Utils/Operation/AsyncOperation.swift; sourceTree = "<group>"; };
+		E9107FB43C44706CDD918137C4F86070 /* CloudKeyStorageError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudKeyStorageError.swift; path = Source/Keyknox/CloudKeyStorage/CloudKeyStorageError.swift; sourceTree = "<group>"; };
+		EB06C02FDE42EE66F17D66986C50A350 /* Sha512.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sha512.swift; path = VirgilCryptoFoundation/Sha512.swift; sourceTree = "<group>"; };
+		EC9D98A04BE697D4673AE564A89F528E /* RsaPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RsaPublicKey.swift; path = VirgilCryptoFoundation/RsaPublicKey.swift; sourceTree = "<group>"; };
+		ECEA62F51F1C65F7374C0055E85BD3A1 /* HashAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashAlgorithm.swift; path = Source/HashAlgorithm.swift; sourceTree = "<group>"; };
+		ED24AD0D64D6D3BE9075D3C71CE42DFF /* VirgilCryptoFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VirgilCryptoFoundation-dummy.m"; sourceTree = "<group>"; };
+		ED6F1A8169A46426BEBB17F5CBFD96E3 /* GroupSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupSession.swift; path = VirgilCryptoFoundation/GroupSession.swift; sourceTree = "<group>"; };
+		EDB144C8D5CFA0E2466F78C9A89679CC /* FooterInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FooterInfo.swift; path = VirgilCryptoFoundation/FooterInfo.swift; sourceTree = "<group>"; };
+		F07E35EA8DADDC3236E1B0562444759D /* KeyPairType+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyPairType+String.swift"; path = "Source/KeyPairType+String.swift"; sourceTree = "<group>"; };
+		F0E98A896CA441E0C11AE38F7EA5A550 /* GetCardResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GetCardResponse.swift; path = Source/Cards/Client/Models/GetCardResponse.swift; sourceTree = "<group>"; };
+		F11317142881363E1C72E267D8EDAE0F /* HybridKeyAlgInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HybridKeyAlgInfo.swift; path = VirgilCryptoFoundation/HybridKeyAlgInfo.swift; sourceTree = "<group>"; };
+		F1C0025A0A509283D808E2E090B0C051 /* SQLiteBindings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteBindings.swift; path = Source/SQLite/SQLiteBindings.swift; sourceTree = "<group>"; };
+		F42C52AF16705677387AF21EA2164ACD /* VirgilCrypto+SignAndEncrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VirgilCrypto+SignAndEncrypt.swift"; path = "Source/VirgilCrypto/VirgilCrypto+SignAndEncrypt.swift"; sourceTree = "<group>"; };
+		F634E7A0B0F9831B4339CFA2A80A0773 /* CardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardManager.swift; path = Source/Cards/CardManager/CardManager.swift; sourceTree = "<group>"; };
+		F6D6D17941BA5DCEC0B2FD976F50F15A /* VirgilSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VirgilSDK.modulemap; sourceTree = "<group>"; };
+		F75BC7066715DFB49E1EF04E10A9811E /* DateUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtils.swift; path = Source/Utils/DateUtils.swift; sourceTree = "<group>"; };
+		F86E4B745205F3428C635C12653B3147 /* SeedEntropySource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeedEntropySource.swift; path = VirgilCryptoFoundation/SeedEntropySource.swift; sourceTree = "<group>"; };
+		F9654B927C075B10220D943F1D3BA9A4 /* Falcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Falcon.swift; path = VirgilCryptoFoundation/Falcon.swift; sourceTree = "<group>"; };
+		FA1C4BA279F464A708832F54AB64ECE7 /* KeyknoxData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyknoxData.swift; path = Source/Keyknox/Client/Models/KeyknoxData.swift; sourceTree = "<group>"; };
+		FA72611D580980F3FCE707FBC39E0ED8 /* KeynoxClient+Queries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeynoxClient+Queries.swift"; path = "Source/Keyknox/Client/KeynoxClient+Queries.swift"; sourceTree = "<group>"; };
+		FBBD707D9BAFBD0D573257013586D5AC /* ClaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ClaySDK.debug.xcconfig; sourceTree = "<group>"; };
+		FC28A5BB10DD0AB5DBF56630BEC59200 /* ServiceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceError.swift; path = Source/BaseClient/ServiceError.swift; sourceTree = "<group>"; };
+		FCFE99FD693AA356E981AE256685BEF1 /* SQLiteDB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteDB.swift; path = Source/SQLite/SQLiteDB.swift; sourceTree = "<group>"; };
+		FD13436104034BD12DADC58529AFAC53 /* CardManager+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CardManager+Obj-C.swift"; path = "Source/Cards/CardManager/CardManager+Obj-C.swift"; sourceTree = "<group>"; };
+		FD1F870D64A3D021656246CBAB8966B6 /* SyncKeyStorageError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyncKeyStorageError.swift; path = Source/Keyknox/SyncKeyStorage/SyncKeyStorageError.swift; sourceTree = "<group>"; };
+		FDE26806D2B445FFC0C7565FE45CC9B0 /* Sha256.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sha256.swift; path = VirgilCryptoFoundation/Sha256.swift; sourceTree = "<group>"; };
+		FE51BC0BA0B9068DE30F39FFFF77C87E /* VirgilCryptoFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VirgilCryptoFoundation-prefix.pch"; sourceTree = "<group>"; };
+		FFB09B1673DFB2290435AC915538E768 /* KeyRecipientInfoList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyRecipientInfoList.swift; path = VirgilCryptoFoundation/KeyRecipientInfoList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		778955C746AAE3E199EDFE13B391FC17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDEA93A6D89F3B60BBE092347782A963 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91D1D77099280E4C33DD83538CA6EC72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55B0068B944CBF971DD32D8FD46ED73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D154C3F688E4A03D292B1EFB0C81D51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D62CC0BB8B39ECC138674763FA7326 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B2170884C108AEB34C40CC5E617109 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762B411F0D2BE28156A536BB98255B14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A408A5D60D47804CEBE5CC486F9C789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87ADC7722797CA243E972664CA4E41B5 /* ClaySDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18B1CE2D6F442A2AEF2A5BFA6D324787 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				849D9EB45BCCD8ADA320517615A011D9 /* Frameworks */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		2147AEB2B587E69FE63E2B8B36D688BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				884231652F0BED5E6F3210EB169D41CA /* VSCFoundation.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39B59D4CBD6BB4D73F1D0290B13FE336 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FED548D0E1B150B164F4276B57BE70F7 /* Pods-Greet */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4DFEF757C415465679D665C3B5A7C624 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58AA4BF8B502F0C8897C790BA3F8C7EF /* VirgilCrypto.modulemap */,
+				32AC3D3B2CEB2D16969958341A670CA4 /* VirgilCrypto-dummy.m */,
+				16CD220149055CEC04A26656FF4579D9 /* VirgilCrypto-Info.plist */,
+				7DC3C92E846129BD1119759A3175DB82 /* VirgilCrypto-prefix.pch */,
+				3385E546EACE486264C8E606D7AE3AA0 /* VirgilCrypto-umbrella.h */,
+				37798948EC6019AFE58F9A3A0AC8525E /* VirgilCrypto.debug.xcconfig */,
+				7FE270E7952E06CC18A6CF093F6FB1C6 /* VirgilCrypto.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VirgilCrypto";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		68363AE9A394E4FFEE676077BC7B7970 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E77EB5A82FE8F2F8CE87E5B02F0A130F /* VSCCrypto-xcframeworks.sh */,
+				5B886E1925C0B6DA3C3B57EB69A19D94 /* VSCCrypto.debug.xcconfig */,
+				88DA829D6348287166255C6E19605032 /* VSCCrypto.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VSCCrypto";
+			sourceTree = "<group>";
+		};
+		74220295D9FA747E47856F4233296B48 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				693CCE1B3B827D232208CEDB6EB66AE1 /* ClaySDK-xcframeworks.sh */,
+				FBBD707D9BAFBD0D573257013586D5AC /* ClaySDK.debug.xcconfig */,
+				B1E469820606738BD410197FF68C490B /* ClaySDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ClaySDK";
+			sourceTree = "<group>";
+		};
+		7C59C879BE97615A6DB036BA4FAB9C37 /* VirgilCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				ECEA62F51F1C65F7374C0055E85BD3A1 /* HashAlgorithm.swift */,
+				1D29AAFBAB37031F8BE2C3575E4A5528 /* KeyPairType.swift */,
+				2E0CA5416C68D00D469A680EFFB9EADE /* KeyPairType+Convert.swift */,
+				69DD6961603032A471B6532E280A8594 /* KeyPairType+RSA.swift */,
+				F07E35EA8DADDC3236E1B0562444759D /* KeyPairType+String.swift */,
+				C58DFB7C009D15A7A65409745DC4AB48 /* StreamUtils.swift */,
+				6BD531A30ACA562F31E4A810E8943BEA /* VirgilCrypto.swift */,
+				66DC1DF4916F8EB9E84A1D51B752370B /* VirgilCrypto+AuthEncrypt.swift */,
+				0E536C9C2E23AEDF064B489E13AC6A4D /* VirgilCrypto+Encryption.swift */,
+				30AB3A82C66AD15C24AB614100C18480 /* VirgilCrypto+Impl.swift */,
+				8326A8852BC96F6DD72FF0B19CBA6D36 /* VirgilCrypto+KeyGeneration.swift */,
+				92F8F17541D0EDA6F7F6C8D0C79F474A /* VirgilCrypto+KeyManagement.swift */,
+				113311817BD2F54E7CC315FE1DB3298B /* VirgilCrypto+Random.swift */,
+				F42C52AF16705677387AF21EA2164ACD /* VirgilCrypto+SignAndEncrypt.swift */,
+				08360AFD541A7AC6366247C85D5ACF97 /* VirgilCrypto+Signatures.swift */,
+				9605BB27CE36121900D2B0B8080B70D1 /* VirgilCryptoError.swift */,
+				AAB1A4E30BA9B146BE0936EC959EBE71 /* VirgilKeyPair.swift */,
+				A9434D57FFBDE93E6197BFF83A8893C6 /* VirgilPrivateKey.swift */,
+				2BED89A112B52F18CF0FBB9CAD105542 /* VirgilPublicKey.swift */,
+				4DFEF757C415465679D665C3B5A7C624 /* Support Files */,
+			);
+			name = VirgilCrypto;
+			path = VirgilCrypto;
+			sourceTree = "<group>";
+		};
+		7CF9E6D7CD8CF9E233C07E317140533E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A760C0C4E86A2E4B4960AB3CC4D491D6 /* Pods-Greet */,
+				41D6D234B903AA484B74AEE709D0A793 /* VirgilCrypto */,
+				91D2CB26B253F0698243F84B19239D89 /* VirgilCryptoFoundation */,
+				1CE529460312FB2637B56B4B780E5118 /* VirgilSDK */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80C4A8BC802697C5429095BBB069CB55 /* VirgilSDK */ = {
+			isa = PBXGroup;
+			children = (
+				283A59DAEA73AFDF704C9185B1D90FC7 /* AccessToken.swift */,
+				956B325137EE62CFEDE65EEFC4260122 /* AccessTokenProvider.swift */,
+				E9005EF60B4C2F781BD0316DD03BAE69 /* AsyncOperation.swift */,
+				A4CB679C002C79D3C7DCE7BB6A3B4E65 /* BaseClient.swift */,
+				30A1805CD1B3C94927AB1E1BED56B631 /* BuiltInTypesSQLiteExtension.swift */,
+				40F8F9B770A2B4F063CC6546FBEE5DAA /* CachingJwtProvider.swift */,
+				281DD67E261CDB6F7E6FC0EC2642941E /* CallbackJwtProvider.swift */,
+				B5F76BB43C1A187242A9C5E4B2E9ABD6 /* CallbackOperation.swift */,
+				A43F028400615E2A0635C644F68DF166 /* Card.swift */,
+				2FD57AB3AE270370266ABB903883A57F /* CardClient.swift */,
+				6F0665D5B8C1347CA44E9C5552B681CE /* CardClient+Queries.swift */,
+				8AB4C5AAB4E5F5FD8C80852522FE32FF /* CardClientProtocol.swift */,
+				F634E7A0B0F9831B4339CFA2A80A0773 /* CardManager.swift */,
+				761D314DF2A87FA901A4A836F00FC3AA /* CardManager+Export.swift */,
+				FD13436104034BD12DADC58529AFAC53 /* CardManager+Obj-C.swift */,
+				7100FDAF8A26550864BCDC28F7D29B19 /* CardManager+Parse.swift */,
+				7B69103E4B589B98BD3331906B56E148 /* CardManager+Queries.swift */,
+				33118BEF3C3693CA029B5E38206BF055 /* CardManager+StaticExport.swift */,
+				0C35350A22A58AE339F7308DFD4A5A9B /* CardManagerParams.swift */,
+				1D64BDE18779D8AD4189346F15BD3B6C /* CardSignature.swift */,
+				5EB7750858934A6A92F30056A62C88C7 /* CardVerifier.swift */,
+				DEB749A99C453CEAE5634A7E4950763E /* CloudEntry.swift */,
+				86B97344F06CD212D21B210AAD76B195 /* CloudEntrySerializer.swift */,
+				5D56F1C0F254D9004F84533A4A882DC9 /* CloudKeyStorage.swift */,
+				03684BF8133B853A024248DB24E4C96C /* CloudKeyStorage+Obj-C.swift */,
+				E9107FB43C44706CDD918137C4F86070 /* CloudKeyStorageError.swift */,
+				A98363463922B35CE8C43962F5ADC809 /* CloudKeyStorageProtocol.swift */,
+				7985A09F1061AEBC1E483286D3A7DB9C /* ConstAccessTokenProvider.swift */,
+				9967AD54FD104F7F54CD4C763CF33A3D /* Data+base64Url.swift */,
+				32901C1C83B9C9920B6ABFBD75B50DB7 /* Data+hex.swift */,
+				F75BC7066715DFB49E1EF04E10A9811E /* DateUtils.swift */,
+				4CA25EE5ACF537E25D04A81621512516 /* ExpBackoffRetry.swift */,
+				DA13ADC3266A287A260903C5E3BE2FBF /* FileSystem.swift */,
+				0D4DC4F53CF4E9DC57738DFA88C45674 /* GeneratorJwtProvider.swift */,
+				D5E44D34DDF600DEFD18EE87CDA87F27 /* GenericOperation.swift */,
+				9D8AC2E98D0A623F4083F9262987420C /* GenericOperation+Dependencies.swift */,
+				F0E98A896CA441E0C11AE38F7EA5A550 /* GetCardResponse.swift */,
+				A8F2DE4F98740CA930388191546C0DF3 /* HttpConnection.swift */,
+				1AADA591743FA48C22EE1053CCEC2D40 /* HttpConnectionProtocol.swift */,
+				E75DC136E3D756D5520C9331A9B900F1 /* HttpRequestAdapter.swift */,
+				ABBD9170C32D8B910D89EB458FCD9EDF /* JWT.swift */,
+				C626332C2D7726232082B039608F2F47 /* JwtBodyContent.swift */,
+				0CA89054E32FB80ADB8EEEE1F9784702 /* JwtGenerator.swift */,
+				4F19C885C0F32AFB554B23530BCB249C /* JwtHeaderContent.swift */,
+				60D3081964EAAE9B3F4A5DE132EFF2D8 /* JwtSignatureContent.swift */,
+				8F2ED31F299488395AA5CC9455973C8F /* KeychainEntry.swift */,
+				17DF824E0022203D778F0B898D463ADB /* KeychainQueryOptions.swift */,
+				C7A7DFF46A151C4ACB2E1331D8EB63E5 /* KeychainStorage.swift */,
+				56CDDB4CCC7AD00266179EA92F6450C9 /* KeychainStorageParams.swift */,
+				D3E0BBD4C161A6CE64CDEAEAE671A45E /* KeychainStorageProtocol.swift */,
+				4BCD984D3D37E23CBF6DD0ABE65BEF25 /* KeychainUtils.swift */,
+				2BD8B9DB759E33971CAEA84D3F5DF8C9 /* KeyEntry.swift */,
+				A6D468D0FB05F53A60EAD5A8C6820CF4 /* KeyknoxClient.swift */,
+				D838D8B9CFD7639F0D13F35888B75C18 /* KeyknoxClientParams.swift */,
+				E572912362629FF0321C36373EA8AD00 /* KeyknoxClientProtocol.swift */,
+				B7589CD3E5ACA0BABE0058B05440CDCB /* KeyknoxCrypto.swift */,
+				3E6F104BA519A7B8932C4DC967893A96 /* KeyknoxCryptoProtocol.swift */,
+				FA1C4BA279F464A708832F54AB64ECE7 /* KeyknoxData.swift */,
+				B609204E92B615A68FD4061ECA3C510D /* KeyknoxKeyEntry.swift */,
+				3F8F5C9992C6D603536D14021275B5B7 /* KeyknoxManager.swift */,
+				A2479157E6CEF3F57A757CECB1C53C12 /* KeyknoxManager+Obj-C.swift */,
+				A10A1786CEDC801A15EAEE86C32FC0AF /* KeyknoxManager+Queries.swift */,
+				5B64AC536289D337DF62653D3104A97A /* KeyknoxManagerError.swift */,
+				8738B12C07B2973848D38BCDB55AA786 /* KeyknoxValue.swift */,
+				FA72611D580980F3FCE707FBC39E0ED8 /* KeynoxClient+Queries.swift */,
+				0DFA5DB0671088F3A6B8181FD1AC290D /* Log.swift */,
+				9DE0EE5B4417DCA1B37A031B7241B385 /* ModelSigner.swift */,
+				630ED711BBAF15829997161AAE11D160 /* Mutex.swift */,
+				96E8722A05A9078FFBFC3F9481ED808E /* NetworkOperation.swift */,
+				62B8D98F29EAEEFCD89940473B2BC721 /* NetworkRetryOperation.swift */,
+				B9E5B50C5C5DCC3EC8C15D3FB949D9D7 /* OperationUtils.swift */,
+				284FF26F884CCB4C24A380B62AF0A50F /* RawCardContent.swift */,
+				3FECFA35AEA8CE839D9FDE2B0CA976E1 /* RawServiceError.swift */,
+				9424521AD586D7E99B9E3AA3C11110BA /* RawSignature.swift */,
+				6436E0FD097C16C93E0423FF1749AFBE /* RawSignedModel.swift */,
+				944F14EE03A73477B1B02DE0E7442D63 /* Reachability.swift */,
+				05D0F3736AFFF1BB8BDC500085EB5CFB /* ReachabilityProtocol.swift */,
+				47E4278AD6E32AB73AF985A12839AC37 /* Request.swift */,
+				DB4B6C7E734DF46C806BAA95EE2AB51F /* Response.swift */,
+				D4075E9AC16EF2C1B5FD52E8C538D72D /* RetryChoice.swift */,
+				7F3DC0E09ADBF4D4E2E276A816D456D8 /* RetryProtocol.swift */,
+				357D748789C276962797A787E1CA8C35 /* SandboxedKeychainStorage.swift */,
+				FC28A5BB10DD0AB5DBF56630BEC59200 /* ServiceError.swift */,
+				701925783DE208CE7348131CD61DE09A /* ServiceRequest.swift */,
+				F1C0025A0A509283D808E2E090B0C051 /* SQLiteBindings.swift */,
+				FCFE99FD693AA356E981AE256685BEF1 /* SQLiteDB.swift */,
+				12C9211A28AF95B94B320E472827E50A /* SQLiteDB+GenericExtension.swift */,
+				71F9957183B7F4E773D228E91BDA002F /* SQLiteStatement.swift */,
+				7A3C7F35C6C58B37D004A749BCA4A4B0 /* SyncKeyStorage.swift */,
+				79F3A6AECDE0CEBCC59DEEC04CD56625 /* SyncKeyStorage+Obj-C.swift */,
+				9D2AD5837CC8C8E6F3BCBC7489CC6477 /* SyncKeyStorage+SyncHelpers.swift */,
+				FD1F870D64A3D021656246CBAB8966B6 /* SyncKeyStorageError.swift */,
+				C18715BB173692BE1A89A45B5C741035 /* TokenContext.swift */,
+				90C5510E00FD8D4D96D668810918467B /* VerifierCredentials.swift */,
+				80B7DE9C56411FB7BC69FFA4F14D0741 /* VersionUtils.swift */,
+				D8F4EF34DE7254DC501D974BAA690389 /* VirgilAgentAdapter.swift */,
+				5E1333343D6B48F430A8BEF87A65E8B0 /* VirgilCardVerifier.swift */,
+				87F6BE42CEB19BCB2013EEA2D548EA77 /* Whitelist.swift */,
+				B4FC6808C2CE79A1A607A5D6CBEE0EFD /* Support Files */,
+			);
+			name = VirgilSDK;
+			path = VirgilSDK;
+			sourceTree = "<group>";
+		};
+		849D9EB45BCCD8ADA320517615A011D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26568343B0484562B1F83EBA1BED8CA1 /* VSCCommon.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0E495D2E6B38FE3E844F6EC4AF8E5A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9FD1DC5AE40E0CFE0983645A18DF917 /* ClaySDK */,
+				7C59C879BE97615A6DB036BA4FAB9C37 /* VirgilCrypto */,
+				C662FD63BB5862B6B5C27DD9F4A157CB /* VirgilCryptoFoundation */,
+				80C4A8BC802697C5429095BBB069CB55 /* VirgilSDK */,
+				AB880AC9C4097EA6CE3A701E6D99439B /* VSCCrypto */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1E261D73385CE86F75E54D7BA2F6D80 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A98BB81A3AEA013CBB5B25134F25C4A0 /* VirgilCryptoFoundation.modulemap */,
+				ED24AD0D64D6D3BE9075D3C71CE42DFF /* VirgilCryptoFoundation-dummy.m */,
+				9A12BA0D248F8DA00D7901E7C7AEFB10 /* VirgilCryptoFoundation-Info.plist */,
+				FE51BC0BA0B9068DE30F39FFFF77C87E /* VirgilCryptoFoundation-prefix.pch */,
+				53564652B66043CDD50EA6E95740BA05 /* VirgilCryptoFoundation-umbrella.h */,
+				3CFD1155F57196043FCDEB4D1C07C8E6 /* VirgilCryptoFoundation.debug.xcconfig */,
+				77F9071068BDE3D6694D0991F333253F /* VirgilCryptoFoundation.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VirgilCryptoFoundation";
+			sourceTree = "<group>";
+		};
+		AB880AC9C4097EA6CE3A701E6D99439B /* VSCCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				18B1CE2D6F442A2AEF2A5BFA6D324787 /* Common */,
+				BB935D4690ECA1014BB190FBFF0A691F /* Foundation */,
+				68363AE9A394E4FFEE676077BC7B7970 /* Support Files */,
+			);
+			name = VSCCrypto;
+			path = VSCCrypto;
+			sourceTree = "<group>";
+		};
+		B4FC6808C2CE79A1A607A5D6CBEE0EFD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6D6D17941BA5DCEC0B2FD976F50F15A /* VirgilSDK.modulemap */,
+				B02EF4FDAB9BF01B8923BE55F02EEF12 /* VirgilSDK-dummy.m */,
+				00E6F20D26832CE18DBBD791A800009F /* VirgilSDK-Info.plist */,
+				30A32506A1C0D6B43F50116B1445BE8B /* VirgilSDK-prefix.pch */,
+				0CC95E76ADB1C43726D121A4F398EFEA /* VirgilSDK-umbrella.h */,
+				707347CBE153CC2A70E8B5EC35420714 /* VirgilSDK.debug.xcconfig */,
+				5704EEBD66948119EE56443057468344 /* VirgilSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VirgilSDK";
+			sourceTree = "<group>";
+		};
+		BB935D4690ECA1014BB190FBFF0A691F /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2147AEB2B587E69FE63E2B8B36D688BB /* Frameworks */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		C662FD63BB5862B6B5C27DD9F4A157CB /* VirgilCryptoFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				470AC9299A25369DD87C0924F4A85C15 /* Aes256Cbc.swift */,
+				0C823DE3C5901AEA0424CFCE24770D2E /* Aes256Gcm.swift */,
+				72BEA85EFD4E1DC8D634570288D60350 /* Alg.swift */,
+				4479DA3A88E5AB8E09889022B81DE508 /* AlgFactory.swift */,
+				10701DD47B49B4F652075E50717EECC0 /* AlgId.swift */,
+				D513C2153FC4402DBB77CE09DD0D7F31 /* AlgInfo.swift */,
+				7CFA22CE3704CBFF3870E145063201B0 /* AlgInfoDerDeserializer.swift */,
+				56D73ECA3E19B400E81DFCA17E99FA08 /* AlgInfoDerSerializer.swift */,
+				7D0E2CFAD46AF5F9A8BCDE9247E0DE4F /* AlgInfoDeserializer.swift */,
+				03BEC2542EB7E3D3F558D76F6D3C1A94 /* AlgInfoSerializer.swift */,
+				083A4720A85970A9CC5BFC6FEBD8263E /* Asn1rd.swift */,
+				C2A9E93FF6E144117AB040A94EA39A82 /* Asn1Reader.swift */,
+				DA366C908591771BE9B356451B9EE985 /* Asn1Tag.swift */,
+				A4A6ED877A899615FBE778705B4731DF /* Asn1wr.swift */,
+				C82D31AEE0CDA3A7BD93096F171B6B13 /* Asn1Writer.swift */,
+				4DF63ACA861D2BA0DFD2426D3D150AB8 /* AuthDecrypt.swift */,
+				CD9B4C0DFD78C30DC17B5028E275FE93 /* AuthEncrypt.swift */,
+				9DAB6F1CF52CF04129B17DD593B518E5 /* Base64.swift */,
+				73CA2236AF6C6100A4A6515C4FBAEB54 /* BrainkeyClient.swift */,
+				9C75E963E495D42975804843F636E92C /* BrainkeyServer.swift */,
+				52BA0E63E0DCD8470739CA73EF386CA9 /* CContext.swift */,
+				38A5CF1D0210738BAE9BD1984B5C15F5 /* Cipher.swift */,
+				87D18312258789A38DE5352709190E12 /* CipherAlgInfo.swift */,
+				027496F2F20138134D5DC33608A2ED43 /* CipherAuth.swift */,
+				6696F942E1AB6712CDF13CEEB6D67290 /* CipherAuthInfo.swift */,
+				49268725499A838E17B5F613E8A6DC0C /* CipherInfo.swift */,
+				04D4435BA7A71322587A4E6EF1C05CD4 /* CipherState.swift */,
+				3EE76B197D72526D867242787B4FC7CE /* CompoundKeyAlg.swift */,
+				A2BDBC6C0269266AAD80BBF1DBE880A7 /* CompoundKeyAlgInfo.swift */,
+				0B7F6DFB83798ACEAA28CA24DC5C0CD3 /* CompoundPrivateKey.swift */,
+				A597C92FDC1C4B1D95CEC18F6FA181D3 /* CompoundPublicKey.swift */,
+				8751B1E3F13BE60C8547F04DB2B311C3 /* ComputeSharedKey.swift */,
+				3911AAB3788A6ABA60DE00B44D047627 /* CtrDrbg.swift */,
+				A4977BE915D42E8E959A37F8CC766084 /* Curve25519.swift */,
+				94B9DA1A73B67E2750150065F2C03270 /* Decrypt.swift */,
+				0BA595AB24C2DF4AFAC01C81B24FEAC7 /* Ecc.swift */,
+				23E960D89ED5019F177D76BC9059B9C3 /* EccAlgInfo.swift */,
+				002ED02F86B4FA2ACDC8EAF9C64B7861 /* EccPrivateKey.swift */,
+				A318F7FF542FC3BC99DC6E9735C451A1 /* EccPublicKey.swift */,
+				CD01483C387F939AFF471A5677E907CF /* Ecies.swift */,
+				5D9193848FE4C914CE58A49E2245496A /* Ed25519.swift */,
+				CF85749EB88445EC50AEE8C8DEC732DD /* Encrypt.swift */,
+				E3A8973DF1AF8FC5C72BDAFF54A886A6 /* EntropyAccumulator.swift */,
+				99620E94F013495CD12595C805E6E125 /* EntropySource.swift */,
+				732D19BE2162318E4E29A220F4573874 /* FakeRandom.swift */,
+				F9654B927C075B10220D943F1D3BA9A4 /* Falcon.swift */,
+				EDB144C8D5CFA0E2466F78C9A89679CC /* FooterInfo.swift */,
+				643DE7F0A273EA85FA7A63F21CD7C393 /* FoundationError.swift */,
+				18DFCDE853B25AE59D72530D19B5280E /* FoundationImplementation.swift */,
+				BBD69362A96E1563C1A8FD27342BFEB7 /* GroupMsgType.swift */,
+				ED6F1A8169A46426BEBB17F5CBFD96E3 /* GroupSession.swift */,
+				5D2A9ADC88E22ADAD5345BDE9C20BC6B /* GroupSessionMessage.swift */,
+				99BAD6F3FC9E4A1AECDB10D9421A51D1 /* GroupSessionTicket.swift */,
+				39625794A1907EAD34C03FA0889A3501 /* Hash.swift */,
+				C2EE2021EC1C8B020B2326391F8AF3DC /* HashBasedAlgInfo.swift */,
+				59C7408E7E9C3D5AF05AED7DB1A017F2 /* Hkdf.swift */,
+				BF0500B256BF890B1A54B6156ECCF87C /* Hmac.swift */,
+				25792B3FA5CC85A1DAD78E802DCA1B3A /* HybridKeyAlg.swift */,
+				F11317142881363E1C72E267D8EDAE0F /* HybridKeyAlgInfo.swift */,
+				9A10DF7CB835F60562A3F158ABA96AA1 /* HybridPrivateKey.swift */,
+				BEF28B0E47562C11243094E949170C57 /* HybridPublicKey.swift */,
+				1BB1342C1A8AF97AB3045E6986E966FC /* Kdf.swift */,
+				5622F35DB5416FB749688A4E6FEE51A0 /* Kdf1.swift */,
+				AF8DCDB7AC78913470ED445B0F482249 /* Kdf2.swift */,
+				127E86EE37EAF4085EF47A75A79FA4EE /* Kem.swift */,
+				64F10D8F3990FAC759F3BAAFAE52348A /* Key.swift */,
+				3600293C66624068FE16FFDAD9072D1A /* KeyAlg.swift */,
+				1D04D9D413AAAB1E87A8F603D189BF77 /* KeyAlgFactory.swift */,
+				4606C6AE098EA81222216A068CB3FE07 /* KeyAsn1Deserializer.swift */,
+				155A5111D420503D1330CB6F22503A72 /* KeyAsn1Serializer.swift */,
+				5AC5EF5AB6342CF05896AF261F06B95D /* KeyCipher.swift */,
+				1F3A189B8D6DC85BC987B613A68729BC /* KeyDeserializer.swift */,
+				C20ED32A9CE11F4C3DD231BCDA7E454B /* KeyInfo.swift */,
+				17DD492095A6D6C00636D0671F58E7B4 /* KeyMaterialRng.swift */,
+				A722FD7132F403B83FEFB5EE15CFC83C /* KeyProvider.swift */,
+				AE9469A995A2704D1AB84FE1B445AF04 /* KeyRecipientInfo.swift */,
+				FFB09B1673DFB2290435AC915538E768 /* KeyRecipientInfoList.swift */,
+				0000752ADC4A024B1FF470575E23EA41 /* KeySerializer.swift */,
+				61953052CE37129C844402ED4EEDFD68 /* KeySigner.swift */,
+				3BB6B19AEE2A0F63DF97FF9578EE1BF1 /* Mac.swift */,
+				B5C38C61B47DD86B42397363EE96767E /* MessageInfo.swift */,
+				03E34AC0EA134535461CE07BE8B1CE12 /* MessageInfoCustomParams.swift */,
+				45F89BBA33F1F4F68ACE0BD0C7E7FDE4 /* MessageInfoDerSerializer.swift */,
+				2E872A534DAB0ABE832A74DB0B44C67E /* MessageInfoEditor.swift */,
+				3D34FA64EE2FDC16FF1AE39007253C2B /* MessageInfoFooter.swift */,
+				451C5068DDD6D9A99EC08B894F02EB67 /* MessageInfoFooterSerializer.swift */,
+				BDD32E90E9D87E750EBCD9A4B19FFDC7 /* MessageInfoSerializer.swift */,
+				DEBF65A99562078ECBD88DFECAF34153 /* Oid.swift */,
+				578B3C8342A70223641CB41F6272ECA3 /* OidId.swift */,
+				AAC128B951232B772CB3ACE65ECC8608 /* Padding.swift */,
+				6ADE4A04DC8E15DC9C5EF9A2ECFD65D4 /* PaddingParams.swift */,
+				732108EED06E5FA13AA0AAB5A5F94FD3 /* PasswordRecipientInfo.swift */,
+				265A5DA42EA3539B4290B91679F7E467 /* PasswordRecipientInfoList.swift */,
+				2DFA11D2B4EBA0AD7C45BC31E66BA092 /* PbeAlgInfo.swift */,
+				39C09E9A02420D400A009EF87F34F5D3 /* Pem.swift */,
+				0DBA4ABB20ABD352DE541C92C3797E33 /* Pkcs5Pbes2.swift */,
+				E50FAE5859276F6B966EA12012947A95 /* Pkcs5Pbkdf2.swift */,
+				2F7CD0B2B172E9EB329D91E277294175 /* Pkcs8Serializer.swift */,
+				751D881FA3443E5ABDA3C247B13C2AB2 /* PrivateKey.swift */,
+				81F8C9E6D77C344E8815E73522BCE5FA /* PublicKey.swift */,
+				2EA614476E5D0CFFAF220DDE85766824 /* Random.swift */,
+				D2B592014F61A0FA4FC630E0AA394B39 /* RandomPadding.swift */,
+				D193ED88F7F3CACF0F00BC6960B09A92 /* RawPrivateKey.swift */,
+				553326B7D56E8E6CDD5DE90AD839893D /* RawPublicKey.swift */,
+				7DD4B166F632E97E6CE0A7279AC4F312 /* RecipientCipher.swift */,
+				A85CF93D6556AE70B9190820C1D5473C /* Round5.swift */,
+				6A60F53B7E947E516439796F52188DFF /* Rsa.swift */,
+				21795379E0B750A358DA744483C361BD /* RsaPrivateKey.swift */,
+				EC9D98A04BE697D4673AE564A89F528E /* RsaPublicKey.swift */,
+				E37285743CD2246B550950F29EC4E1E4 /* SaltedKdf.swift */,
+				268EA2F073F582A2D997E3A29EA5FC10 /* SaltedKdfAlgInfo.swift */,
+				A1710CBCF1DFBADD72C5870960F4AA6F /* Sec1Serializer.swift */,
+				F86E4B745205F3428C635C12653B3147 /* SeedEntropySource.swift */,
+				D7E4720A7C306B4FFD01E1DA9B17566E /* Sha224.swift */,
+				FDE26806D2B445FFC0C7565FE45CC9B0 /* Sha256.swift */,
+				2850A2E416A0730ED055B6F1A5B9F996 /* Sha384.swift */,
+				EB06C02FDE42EE66F17D66986C50A350 /* Sha512.swift */,
+				D5A084BF2F24CC696B5E6F8C3A123383 /* SignedDataInfo.swift */,
+				7E7969396BDB77D848074524711A2EB7 /* Signer.swift */,
+				246C980D07D97A6F65660D98727C3E08 /* SignerInfo.swift */,
+				DF8D63FC7F2C6D358508C07B1F6F13D6 /* SignerInfoList.swift */,
+				C25DD5ACF198586B7854838BD7E01260 /* SimpleAlgInfo.swift */,
+				A129B874CE8ECF9E15DF872E9A17407E /* Verifier.swift */,
+				C8215F4322AFAE5EB3801B822995DD7D /* VirgilCryptoFoundation.h */,
+				A1E261D73385CE86F75E54D7BA2F6D80 /* Support Files */,
+			);
+			name = VirgilCryptoFoundation;
+			path = VirgilCryptoFoundation;
+			sourceTree = "<group>";
+		};
+		C9FD1DC5AE40E0CFE0983645A18DF917 /* ClaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				0A408A5D60D47804CEBE5CC486F9C789 /* Frameworks */,
+				74220295D9FA747E47856F4233296B48 /* Support Files */,
+			);
+			name = ClaySDK;
+			path = ClaySDK;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A0E495D2E6B38FE3E844F6EC4AF8E5A0 /* Pods */,
+				7CF9E6D7CD8CF9E233C07E317140533E /* Products */,
+				39B59D4CBD6BB4D73F1D0290B13FE336 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED548D0E1B150B164F4276B57BE70F7 /* Pods-Greet */ = {
+			isa = PBXGroup;
+			children = (
+				26CAE58668757C153600821876AE16DF /* Pods-Greet.modulemap */,
+				B126709715968DEC0FC0B2B837AC6A7B /* Pods-Greet-acknowledgements.markdown */,
+				E8CCBCB08621133EA36E858896A73450 /* Pods-Greet-acknowledgements.plist */,
+				4D37D9537152550694421DEF9F8FF960 /* Pods-Greet-dummy.m */,
+				39986E82442155BE5F6B70EE211C860D /* Pods-Greet-Info.plist */,
+				4E282E1F280C7A851D3C486DF367D486 /* Pods-Greet-umbrella.h */,
+				AFBCEEFE85C34B4FED66CC16E1354210 /* Pods-Greet.debug.xcconfig */,
+				E8321C32255EB5A1E06484EE53AA5E61 /* Pods-Greet.release.xcconfig */,
+			);
+			name = "Pods-Greet";
+			path = "Target Support Files/Pods-Greet";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		205F078B3737265649EA31734B3971AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD2AAF99227ED320CEE36FA2EAC252E /* VirgilCryptoFoundation.h in Headers */,
+				C31B38AD54B6C2FDC61528FFC9A8CE7A /* VirgilCryptoFoundation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3494003AAA826EF93413B19D3CE71502 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C1F9B354C81C9A3836D405AD1E1913 /* VirgilCrypto-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3834C1EE4C7DDBF8F52ADA70673B54FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F99F6930588CC43545FDC42861F59C /* Pods-Greet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D19FB73BECB5C4600E1180AD73207D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ADD35791CC34778A7403747F0D158DA /* VirgilSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27865AF1C1942627E7CB060EB758FFBB /* VirgilCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18D17C4BA47D026D97FF13B728D1C55 /* Build configuration list for PBXNativeTarget "VirgilCrypto" */;
+			buildPhases = (
+				3494003AAA826EF93413B19D3CE71502 /* Headers */,
+				35C3B19D99211349AA5C96C85597C8AC /* Sources */,
+				F8B2170884C108AEB34C40CC5E617109 /* Frameworks */,
+				E07CF0CC52652CB571693C53C8568B6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EA673B92EC2B114B46F010C0FB4AF5F /* PBXTargetDependency */,
+			);
+			name = VirgilCrypto;
+			productName = VirgilCrypto;
+			productReference = 41D6D234B903AA484B74AEE709D0A793 /* VirgilCrypto */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C710066F044BC68BAA8FAFEEC7089AF /* VirgilSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34B54A48207AFA93C6604407B44F49B9 /* Build configuration list for PBXNativeTarget "VirgilSDK" */;
+			buildPhases = (
+				5D19FB73BECB5C4600E1180AD73207D7 /* Headers */,
+				6404BE306966C61A15AAB67B3E8C920E /* Sources */,
+				91D1D77099280E4C33DD83538CA6EC72 /* Frameworks */,
+				0FF9CF3108D56029D63AEE97ABFA3D8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				805B4D4A7D96B932D053E508EA84757F /* PBXTargetDependency */,
+			);
+			name = VirgilSDK;
+			productName = VirgilSDK;
+			productReference = 1CE529460312FB2637B56B4B780E5118 /* VirgilSDK */;
+			productType = "com.apple.product-type.framework";
+		};
+		5311CEADBF207FF3DEECDC5946C64882 /* VirgilCryptoFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23BACC608DB755DD25D72428362539C /* Build configuration list for PBXNativeTarget "VirgilCryptoFoundation" */;
+			buildPhases = (
+				205F078B3737265649EA31734B3971AF /* Headers */,
+				97707B7DF5D65E962B5412E5AE8E70FE /* Sources */,
+				D154C3F688E4A03D292B1EFB0C81D51C /* Frameworks */,
+				E4B24F5EC023436C1A3E6E91DEEE2A2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF6F43BA4BD866731790AC1D332DCB19 /* PBXTargetDependency */,
+			);
+			name = VirgilCryptoFoundation;
+			productName = VirgilCryptoFoundation;
+			productReference = 91D2CB26B253F0698243F84B19239D89 /* VirgilCryptoFoundation */;
+			productType = "com.apple.product-type.framework";
+		};
+		72AA5DCC4A9461151630DF8D4BCABB5B /* Pods-Greet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F07C1BEDBD1293F617E6504F9837BA9F /* Build configuration list for PBXNativeTarget "Pods-Greet" */;
+			buildPhases = (
+				3834C1EE4C7DDBF8F52ADA70673B54FE /* Headers */,
+				5EE9EF6128A7F967BA29C31CF65C2816 /* Sources */,
+				778955C746AAE3E199EDFE13B391FC17 /* Frameworks */,
+				EBC989A03BD9EF62928187C0A82721F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17B81247D4F4A7A18CFDB325C4885E6A /* PBXTargetDependency */,
+				19135D32AB229096B513B456B26FA7DC /* PBXTargetDependency */,
+				2130AC47EB6798B7644FC8AE4F1C22F5 /* PBXTargetDependency */,
+				2E3D211C6DE06231AABD833E7D6BF95C /* PBXTargetDependency */,
+				C0A9E3B5A90835791361C1811B83B9F4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Greet";
+			productName = Pods_Greet;
+			productReference = A760C0C4E86A2E4B4960AB3CC4D491D6 /* Pods-Greet */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7CF9E6D7CD8CF9E233C07E317140533E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2798278EB199E9E60DD57FE7E3EBF82 /* ClaySDK */,
+				72AA5DCC4A9461151630DF8D4BCABB5B /* Pods-Greet */,
+				27865AF1C1942627E7CB060EB758FFBB /* VirgilCrypto */,
+				5311CEADBF207FF3DEECDC5946C64882 /* VirgilCryptoFoundation */,
+				3C710066F044BC68BAA8FAFEEC7089AF /* VirgilSDK */,
+				8BDFA2C0DB14198AE4E03AC7689629D4 /* VSCCrypto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FF9CF3108D56029D63AEE97ABFA3D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07CF0CC52652CB571693C53C8568B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B24F5EC023436C1A3E6E91DEEE2A2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC989A03BD9EF62928187C0A82721F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CCEBB2F781DDA5743912950E15C6E5D /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/VSCCrypto/VSCCrypto-xcframeworks.sh",
+				"${PODS_ROOT}/VSCCrypto/VSCCrypto-XCFrameworks/VSCCommon.xcframework",
+				"${PODS_ROOT}/VSCCrypto/VSCCrypto-XCFrameworks/VSCFoundation.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/VSCCrypto/Common/VSCCommon.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/VSCCrypto/Foundation/VSCFoundation.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/VSCCrypto/VSCCrypto-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BAA699256FAB3A12AE1DC9818571BB1 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/ClaySDK/ClaySDK-xcframeworks.sh",
+				"${PODS_ROOT}/ClaySDK/ClaySDK.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ClaySDK/ClaySDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/ClaySDK/ClaySDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35C3B19D99211349AA5C96C85597C8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A37B04F5A58C658B58314260448D99B /* HashAlgorithm.swift in Sources */,
+				6043E52C17637EDCBE8D20ABD627E236 /* KeyPairType.swift in Sources */,
+				4A9B91236EFC36248DAC20E6AFC7D55A /* KeyPairType+Convert.swift in Sources */,
+				41D3AEB54E424F1F1FDB42917C9F013A /* KeyPairType+RSA.swift in Sources */,
+				5142F2C0EB92160F503AC4EAFF45AAEC /* KeyPairType+String.swift in Sources */,
+				6A5F9CA0E0C60153B6B1423503E25D7C /* StreamUtils.swift in Sources */,
+				43CE0BC2A603E640F801BD6F6FAEDF57 /* VirgilCrypto.swift in Sources */,
+				7345309444B5F81950B58E7656FD4FFB /* VirgilCrypto+AuthEncrypt.swift in Sources */,
+				0A0556BE4FCFCCD7B09867FE36427140 /* VirgilCrypto+Encryption.swift in Sources */,
+				60E60737F048899693F755144D901131 /* VirgilCrypto+Impl.swift in Sources */,
+				77A3D37894B5E649AFE0E69C74CED7EC /* VirgilCrypto+KeyGeneration.swift in Sources */,
+				DF85EF7D8CD2AB8025B42106751E7A6E /* VirgilCrypto+KeyManagement.swift in Sources */,
+				8D68F958D4E9F66C0DCAB297B25028A4 /* VirgilCrypto+Random.swift in Sources */,
+				C92FE5D16F3C8A64C089810424678274 /* VirgilCrypto+SignAndEncrypt.swift in Sources */,
+				E551ECE4C30C80BA38A3B22048EF23BC /* VirgilCrypto+Signatures.swift in Sources */,
+				8273B17A8C6430A42E52A0DDF66DA124 /* VirgilCrypto-dummy.m in Sources */,
+				16F28BA68AFB7E61A5115F51BFC354F3 /* VirgilCryptoError.swift in Sources */,
+				833DA494A4CB9CDBBBB85905BF3F1B05 /* VirgilKeyPair.swift in Sources */,
+				E59F218A855F7ED65E28A910D0D6B2F6 /* VirgilPrivateKey.swift in Sources */,
+				336059877DA55D34DA878BCD6BB25BA2 /* VirgilPublicKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE9EF6128A7F967BA29C31CF65C2816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA92497B4A208A8BE55062AEB4022B1A /* Pods-Greet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6404BE306966C61A15AAB67B3E8C920E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97615EC70C9B247E36403FFA55144A11 /* AccessToken.swift in Sources */,
+				147C16FE7B5D84C5096619B4F0EE6717 /* AccessTokenProvider.swift in Sources */,
+				712304734CE47818D4915E2C22CC414D /* AsyncOperation.swift in Sources */,
+				D57A94C1E6844BBAEDFC3C596FC52CD0 /* BaseClient.swift in Sources */,
+				128FE8D24E664ECE88B1D75BAB87130E /* BuiltInTypesSQLiteExtension.swift in Sources */,
+				ABC5967E52247B09AE62D638386715F7 /* CachingJwtProvider.swift in Sources */,
+				6490858C30ADD75D6930153ADB39A75C /* CallbackJwtProvider.swift in Sources */,
+				0426272B47E6F09FD5D36872F88ACD17 /* CallbackOperation.swift in Sources */,
+				B481AEF3E5E7999EDF98678F3A8AB340 /* Card.swift in Sources */,
+				A2271B8E1AFB6E2077AA840F4D85989E /* CardClient.swift in Sources */,
+				03AF375613F0F5C0F3EC9762C6171A06 /* CardClient+Queries.swift in Sources */,
+				9B4DBDC34E45DC76310CBC144898356F /* CardClientProtocol.swift in Sources */,
+				98A93BB028014A7ACFC0BACFB9E6620B /* CardManager.swift in Sources */,
+				7B306D571D6742A66208084E742D2C1F /* CardManager+Export.swift in Sources */,
+				0D78665D3755D0971D9F73BA085B9D40 /* CardManager+Obj-C.swift in Sources */,
+				56D2F2503CECBD4DB6A0A9CC550F70A4 /* CardManager+Parse.swift in Sources */,
+				52A1156F231CEE9A5CFB5836A4A67E79 /* CardManager+Queries.swift in Sources */,
+				881AFBF146061015FB6BBC505C436CE2 /* CardManager+StaticExport.swift in Sources */,
+				3FC6DEABE939BF52645621B427A996EB /* CardManagerParams.swift in Sources */,
+				C7C7E4FF5794E45FEF6E65F8BC8FEB6F /* CardSignature.swift in Sources */,
+				07D46F89358C890237335C8D3B10F5EE /* CardVerifier.swift in Sources */,
+				7FD34D4EDE7578376BE2251FAC714CE5 /* CloudEntry.swift in Sources */,
+				1BC0069E1DCC15F54B2B10CCDF5C9685 /* CloudEntrySerializer.swift in Sources */,
+				0127C60B340E8A675276A364A392944F /* CloudKeyStorage.swift in Sources */,
+				8A05364B8DF8589FA9BBA2478099B13C /* CloudKeyStorage+Obj-C.swift in Sources */,
+				DDB476A7CDFDA0655B39B71C54277702 /* CloudKeyStorageError.swift in Sources */,
+				D1E3896544DEBABC9BF23FB3A1D26AAE /* CloudKeyStorageProtocol.swift in Sources */,
+				E14757081C53FDCA4FC4418096CB4B10 /* ConstAccessTokenProvider.swift in Sources */,
+				4443E4ECF59724338BFDF24AA7B25F84 /* Data+base64Url.swift in Sources */,
+				9088D236D3B745F6C8CDDDDE6A8E5F8A /* Data+hex.swift in Sources */,
+				B01CF9C5C6257793AFB519D866E11173 /* DateUtils.swift in Sources */,
+				F9A95000EF0310A225B0F53A91BDEDAF /* ExpBackoffRetry.swift in Sources */,
+				0035F6082735EA822B16F9FD9E178CF9 /* FileSystem.swift in Sources */,
+				0D49BFF7E8AC8512ABFEC0453C2CC1BF /* GeneratorJwtProvider.swift in Sources */,
+				5DBFC5CDC7FEA80B35D1AD1B5CFA9BC4 /* GenericOperation.swift in Sources */,
+				EB137FDF57834F37244A15C22FF61BBD /* GenericOperation+Dependencies.swift in Sources */,
+				550471630631D5290D4051D3E579DC06 /* GetCardResponse.swift in Sources */,
+				C55FFF4A46A5FA1286E038D879884E90 /* HttpConnection.swift in Sources */,
+				8677045AF9A49A1A4CDF498810581FFB /* HttpConnectionProtocol.swift in Sources */,
+				3996D36BBA20114FFB33BC8D76C04432 /* HttpRequestAdapter.swift in Sources */,
+				FFDB0A56119DDD0DFCDA8139486137FD /* JWT.swift in Sources */,
+				7064E85F068D8F004F0ADD2D03F4E88A /* JwtBodyContent.swift in Sources */,
+				5C55BAD46642625B41F05FA78DF0E5EE /* JwtGenerator.swift in Sources */,
+				11D660E4A4A9FD64BB724160F4AABBEE /* JwtHeaderContent.swift in Sources */,
+				397BDB971CCDDB8B1D983DEFD2B291D2 /* JwtSignatureContent.swift in Sources */,
+				70813A4A931941CF131EF4451C85B57A /* KeychainEntry.swift in Sources */,
+				F82CF35B4A1BBBC91A73CA59EE7FD591 /* KeychainQueryOptions.swift in Sources */,
+				3228B75BD350DB6891394FDDD6C8344D /* KeychainStorage.swift in Sources */,
+				11288E85C03FB6C61C296351A84C342A /* KeychainStorageParams.swift in Sources */,
+				C9C5DD099961B6FD0EDC4430DF4FBB71 /* KeychainStorageProtocol.swift in Sources */,
+				0480A0E7C49C0DACD7A02C6E51C55597 /* KeychainUtils.swift in Sources */,
+				3C22B601B2A3BCECD263DA1CD2C38E8F /* KeyEntry.swift in Sources */,
+				645CD79F084B0AE6AA2502C43F932E62 /* KeyknoxClient.swift in Sources */,
+				E7FCBD41AA5603D73EB8528475F4C765 /* KeyknoxClientParams.swift in Sources */,
+				7562122A0F80B9EEC9B38736E94DE2E5 /* KeyknoxClientProtocol.swift in Sources */,
+				44F7E2CABF54B0BFB149DAC6CA9A4D4B /* KeyknoxCrypto.swift in Sources */,
+				7E21D1C313BC395613F7280FCBA41431 /* KeyknoxCryptoProtocol.swift in Sources */,
+				95D5DC446D0B606889F9E1A748D19C4B /* KeyknoxData.swift in Sources */,
+				E6776293A7E4E3C23B4BA0231AD6889B /* KeyknoxKeyEntry.swift in Sources */,
+				E83ED60784C2CD0FD0ADA838811759B0 /* KeyknoxManager.swift in Sources */,
+				53A6FE81BCB7FBCD123A1DA54573C851 /* KeyknoxManager+Obj-C.swift in Sources */,
+				44179BC758C31EA61DEF8B4E91013595 /* KeyknoxManager+Queries.swift in Sources */,
+				1A0856D2B857172BC6FE244234CDD3A0 /* KeyknoxManagerError.swift in Sources */,
+				BC5F65E4BC3B7742283A04939DCF53CD /* KeyknoxValue.swift in Sources */,
+				4DFCCE8B930306317AA0709073327E3E /* KeynoxClient+Queries.swift in Sources */,
+				C90075DF56B3B77C2146746F6C702B20 /* Log.swift in Sources */,
+				215319C803F088CE7F18371900A82B96 /* ModelSigner.swift in Sources */,
+				044783C02ACBEC74EEF3264D106E1F4C /* Mutex.swift in Sources */,
+				EAE8124EBC8956858777B097D2F1C45F /* NetworkOperation.swift in Sources */,
+				BE59A1993E941C2D6A63E63D85DDD625 /* NetworkRetryOperation.swift in Sources */,
+				368D8D10A0E1CD03C7CB0658941A64AD /* OperationUtils.swift in Sources */,
+				DFD6FFD35C1FE00C00F9708F4DA3513D /* RawCardContent.swift in Sources */,
+				2F0575DE1A32BD2A2039C7EDD33507DF /* RawServiceError.swift in Sources */,
+				A0463B81DCC007016ADCC29CA216892C /* RawSignature.swift in Sources */,
+				6083A9489F9CB1D5F059165287F180E9 /* RawSignedModel.swift in Sources */,
+				47B8AE782F262971ABF681F1D292EE74 /* Reachability.swift in Sources */,
+				E93B67DC249E95AA85E45FDC0B9BEFE9 /* ReachabilityProtocol.swift in Sources */,
+				6D04C688C4572D55BB608F7F27BB739A /* Request.swift in Sources */,
+				E6CF63EA172C9F8F3DA9CCDFFE217AC8 /* Response.swift in Sources */,
+				9856199C1570706B980B37DAEC608B31 /* RetryChoice.swift in Sources */,
+				5D3FC7EBA59BAA70BC3F82FD2AF37EA8 /* RetryProtocol.swift in Sources */,
+				7B6039CE32551CA0694453475C7501B1 /* SandboxedKeychainStorage.swift in Sources */,
+				67FF4085246DA75C9C980274A2B9B350 /* ServiceError.swift in Sources */,
+				6D3706837B4B3C1CB918B9BCF6035727 /* ServiceRequest.swift in Sources */,
+				FD92DFFAA97763501ED89D013B8399F3 /* SQLiteBindings.swift in Sources */,
+				1B36BFD68BEA65B2B5DE0F05C1607347 /* SQLiteDB.swift in Sources */,
+				54CC172C6DA168A01DAB6246CB456ADF /* SQLiteDB+GenericExtension.swift in Sources */,
+				AA3F6FC54292A43E90A86694E57C0D9C /* SQLiteStatement.swift in Sources */,
+				9585AA7AAAAC48AEAF74C4888174DDC8 /* SyncKeyStorage.swift in Sources */,
+				7FB6F0E69C5EA5CFC10F95722C80DC9B /* SyncKeyStorage+Obj-C.swift in Sources */,
+				D1A7A4451A4EDD221EE0B0807E2392D8 /* SyncKeyStorage+SyncHelpers.swift in Sources */,
+				A1F2493E8BFA88903B42743A3AE9E21B /* SyncKeyStorageError.swift in Sources */,
+				44DC26183738D1F85A4E612641C53250 /* TokenContext.swift in Sources */,
+				1882F1FC831C56BE645CBEFBE5FB5D02 /* VerifierCredentials.swift in Sources */,
+				481639369E2CFE2EFEF5143573D40CD3 /* VersionUtils.swift in Sources */,
+				8FBFF51983CBCFF7EF8974085D5599DA /* VirgilAgentAdapter.swift in Sources */,
+				6A394B0A5E125E8FBF76524F4472EC81 /* VirgilCardVerifier.swift in Sources */,
+				5070AC278E7144C6DF068E7841BC6FB7 /* VirgilSDK-dummy.m in Sources */,
+				9076B3009CC13B41290E9627AC324AA7 /* Whitelist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97707B7DF5D65E962B5412E5AE8E70FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E614243F1B2ED5AC46617E929D3F60 /* Aes256Cbc.swift in Sources */,
+				AAE21052739749B5DC7B6E0A4C3F7649 /* Aes256Gcm.swift in Sources */,
+				589CB5E265FB48B2D40931046024CE36 /* Alg.swift in Sources */,
+				93242B7104CD282984547F3C7A535CDE /* AlgFactory.swift in Sources */,
+				7EBF65BBF56CB5220F7552A49F09B867 /* AlgId.swift in Sources */,
+				180F2AD7D9A8CD5EC37C429EDEB1BD04 /* AlgInfo.swift in Sources */,
+				0984043CDA4969E037029EDDC27EC4F7 /* AlgInfoDerDeserializer.swift in Sources */,
+				95DC952FF6C4CEBC6CCB938EB8462C66 /* AlgInfoDerSerializer.swift in Sources */,
+				32B00D5F4F6BDB0C405ABCE37B70717D /* AlgInfoDeserializer.swift in Sources */,
+				F5FE9E1F2FF44C0C1EBAD8C2014C22EB /* AlgInfoSerializer.swift in Sources */,
+				9226CDC0BF9B31AF4C6377668485DE96 /* Asn1rd.swift in Sources */,
+				3BD9F9FB5632E34389B576383660B630 /* Asn1Reader.swift in Sources */,
+				4054B337F6C6179E2EE118D4E460E212 /* Asn1Tag.swift in Sources */,
+				43996C84307082A6C19CDB27D22BE617 /* Asn1wr.swift in Sources */,
+				AE168970D171D0B95ACFB57CD95EAAE7 /* Asn1Writer.swift in Sources */,
+				D6054C4D1E70A63362F4502570B3C71A /* AuthDecrypt.swift in Sources */,
+				E19FF0C51FA9FC3C077496A4CA995DE1 /* AuthEncrypt.swift in Sources */,
+				CFB7C220C6FC72AA7A3950AA83557F28 /* Base64.swift in Sources */,
+				E8C2864E10F3277EC090DDA6A5B5F2CE /* BrainkeyClient.swift in Sources */,
+				A37630EF3E816663A92BF8B0EE0BB546 /* BrainkeyServer.swift in Sources */,
+				48C4A8A71C71ABBA68CAFDDB4703AEF5 /* CContext.swift in Sources */,
+				222693845731ADAFA2DDA25DD9BE3BAC /* Cipher.swift in Sources */,
+				EF42F57AA5A24361200F08551D7C0E39 /* CipherAlgInfo.swift in Sources */,
+				5FB6B0560CC2358B898A549F2911C4B0 /* CipherAuth.swift in Sources */,
+				EC82385955AB67CE8266C07642C0BC6A /* CipherAuthInfo.swift in Sources */,
+				04123E9B11ADF9EC462649C1A312E1B9 /* CipherInfo.swift in Sources */,
+				49CB9749812A16CC5508589BC1487631 /* CipherState.swift in Sources */,
+				123197B4BC9AE3D8B05E0958DF96A8BB /* CompoundKeyAlg.swift in Sources */,
+				4021FDABA1867E2562B2416730F291EE /* CompoundKeyAlgInfo.swift in Sources */,
+				68189138CB9609A6CB88789864D97B17 /* CompoundPrivateKey.swift in Sources */,
+				2B1A194ECB6C434DE827A2003D272617 /* CompoundPublicKey.swift in Sources */,
+				773BFC25B811E9586F7ABD389345EA81 /* ComputeSharedKey.swift in Sources */,
+				9AB35989560EEF7651A67A548282D032 /* CtrDrbg.swift in Sources */,
+				BF75F3254F01FABFB2AC0292BC3D4C29 /* Curve25519.swift in Sources */,
+				28213DB496320D1576A0E93B4E5762E9 /* Decrypt.swift in Sources */,
+				9163412194259CC57A404FDB23CB1B46 /* Ecc.swift in Sources */,
+				BBADD0CD163F7CB46E94A3AF72FFB347 /* EccAlgInfo.swift in Sources */,
+				BC6C94598B7AC5E5E9C907201C3800B1 /* EccPrivateKey.swift in Sources */,
+				E2EF8A0CC9759CEEA2B6E22A6375C678 /* EccPublicKey.swift in Sources */,
+				E59B2AC2DC24D5AA684B763F62E3554D /* Ecies.swift in Sources */,
+				006ADFAC76400F2E67B0A7A87B0DCFBE /* Ed25519.swift in Sources */,
+				DF3262A3E3150E2DD888035B58B66D92 /* Encrypt.swift in Sources */,
+				F3DE66D587F912775DF8AD76AF31F9F8 /* EntropyAccumulator.swift in Sources */,
+				9B7CAB60F9F123D960B76438A409AFB8 /* EntropySource.swift in Sources */,
+				00223AE49FD11A5BDC44447DE0C4681D /* FakeRandom.swift in Sources */,
+				7A84A8B8192595936FB9F5B0072A47C4 /* Falcon.swift in Sources */,
+				2470AA0EAB221CA7F17CCD14FE5DA303 /* FooterInfo.swift in Sources */,
+				6FBD822EA01EF43AAFC2E922B9302A52 /* FoundationError.swift in Sources */,
+				1876505AD81A545909AC3B7CA82800CF /* FoundationImplementation.swift in Sources */,
+				73E0D4B9B76E388797EEDD818FCABD63 /* GroupMsgType.swift in Sources */,
+				245250370EEA8B198F07C60518F02B66 /* GroupSession.swift in Sources */,
+				92D8720F5ACE7484B39DB1085A2CB72A /* GroupSessionMessage.swift in Sources */,
+				27F40C6224F525488E2761361B77237E /* GroupSessionTicket.swift in Sources */,
+				40663583FFE18D52F9530992B4E90AEE /* Hash.swift in Sources */,
+				D1F3246B5FAEAD110CFB606E9095CA68 /* HashBasedAlgInfo.swift in Sources */,
+				1FE8B041F61848A69D4301C5D8D6A55F /* Hkdf.swift in Sources */,
+				8D580E6CB51FB933B493BCB45AA8DA88 /* Hmac.swift in Sources */,
+				E5CCAEE577E2EC4AAD9863B4DAF3FA7D /* HybridKeyAlg.swift in Sources */,
+				22E50EB6E7B7C5F804C7D12E5A36CE21 /* HybridKeyAlgInfo.swift in Sources */,
+				53454A84BDAF87905EF04DEF53D498A7 /* HybridPrivateKey.swift in Sources */,
+				E2F7E2105732108DF9C92F4EF523199C /* HybridPublicKey.swift in Sources */,
+				D58D47BE78B889BD8FBC3409341589E0 /* Kdf.swift in Sources */,
+				D92A93E9F53F4235A275EC49CA7EF1EA /* Kdf1.swift in Sources */,
+				7FC23B99F1CBA5EB843054B89DDA8348 /* Kdf2.swift in Sources */,
+				515032098D61F00276C8A88DD7D1955D /* Kem.swift in Sources */,
+				A34312888AE22C20B8B9C72B6B36C48C /* Key.swift in Sources */,
+				33D1183A5CB4273EA661B232AA327329 /* KeyAlg.swift in Sources */,
+				2FFE522E6A22A0FE5CC41BE3E0E65BBC /* KeyAlgFactory.swift in Sources */,
+				9F345811DB520B83AB19243B80369878 /* KeyAsn1Deserializer.swift in Sources */,
+				C2E2F58467E55375B40C8FF26E5CFDC1 /* KeyAsn1Serializer.swift in Sources */,
+				FBCC0712399024D9906FA8D09A230E0D /* KeyCipher.swift in Sources */,
+				BDEFFABB97B32BDAC2EE6E961453264D /* KeyDeserializer.swift in Sources */,
+				A8DD37F01780F9F0B624021256CDAA4A /* KeyInfo.swift in Sources */,
+				9CBA855389F731F0B988E782C8691F7B /* KeyMaterialRng.swift in Sources */,
+				4A491B948F31B4E25E4738BE05056E95 /* KeyProvider.swift in Sources */,
+				B1856221D6B2C5D1937B51E6804F7797 /* KeyRecipientInfo.swift in Sources */,
+				0A1822420697236A303C09F7F79304D3 /* KeyRecipientInfoList.swift in Sources */,
+				DAFBA68AE9F1AA1F345DDCE3075EF99B /* KeySerializer.swift in Sources */,
+				F62D0B2882070FF2BEBCE65FC7CF950C /* KeySigner.swift in Sources */,
+				440EC9C55FE1DF3DA62AF2436E1FF1DE /* Mac.swift in Sources */,
+				C4BDE9F21764981CD756C56B2533263C /* MessageInfo.swift in Sources */,
+				C593C639BDF1505218559B24D25CF181 /* MessageInfoCustomParams.swift in Sources */,
+				060650D6DC8A39F8D0057FF6CD258B11 /* MessageInfoDerSerializer.swift in Sources */,
+				F43C7D24DBFB0AD513CE5367553178BC /* MessageInfoEditor.swift in Sources */,
+				9343124B4EF32A04378086BD1E12CCC7 /* MessageInfoFooter.swift in Sources */,
+				D2B3386AFEACDC4B702FD51E8699C7A3 /* MessageInfoFooterSerializer.swift in Sources */,
+				52D10C763EAA7C016D5E598C9495B1E1 /* MessageInfoSerializer.swift in Sources */,
+				020B9A26745B902F572A385AF46C80DE /* Oid.swift in Sources */,
+				75734696DD4C67E0F8E4B8DD847EBA0A /* OidId.swift in Sources */,
+				40A28A7B2F0FFCE6C9D856C87524C5C7 /* Padding.swift in Sources */,
+				376238FC478A0D7DD32190A2182662AF /* PaddingParams.swift in Sources */,
+				5EDD7B4C094A2966411BC2753590672A /* PasswordRecipientInfo.swift in Sources */,
+				DE9186C6994C0298BEC0578325110571 /* PasswordRecipientInfoList.swift in Sources */,
+				CB0E8FE7C034D45F6D772CACF997CDF0 /* PbeAlgInfo.swift in Sources */,
+				E036FE97630368B323A91EE8FF29DE5A /* Pem.swift in Sources */,
+				3D275C66554040D4F368B306D609F788 /* Pkcs5Pbes2.swift in Sources */,
+				B138EEFA5CF8420502940FFD91ABB5FE /* Pkcs5Pbkdf2.swift in Sources */,
+				5E6F5E384CFE1EE3606508B152AC63D1 /* Pkcs8Serializer.swift in Sources */,
+				590A7A247EEAFEC9E26686F8875EA767 /* PrivateKey.swift in Sources */,
+				A75E64848F518B8EA72AC0471A0524A0 /* PublicKey.swift in Sources */,
+				8332995BBBFF417160F8011A151CC93E /* Random.swift in Sources */,
+				09DB0E547D191F260FA70FDC6F9ED517 /* RandomPadding.swift in Sources */,
+				1BF163F11171C08D20ABAB3FF0823B5B /* RawPrivateKey.swift in Sources */,
+				18E8660693D21CA0FEA581902D09948E /* RawPublicKey.swift in Sources */,
+				E646AE81D4CB9593E6BA16E4DE3528EA /* RecipientCipher.swift in Sources */,
+				A3A44A029C6D8344035F13683ED56F4F /* Round5.swift in Sources */,
+				CE4BC018F15502EF2320C682022298F7 /* Rsa.swift in Sources */,
+				E68AB8B5888F2F9F1C42535BD89636CB /* RsaPrivateKey.swift in Sources */,
+				9ABC48CFB1592D14254D7131AE9EF617 /* RsaPublicKey.swift in Sources */,
+				6FA242694FD5992273C5EB4F7CADA30D /* SaltedKdf.swift in Sources */,
+				733237130CAA406BF324B36443CF7357 /* SaltedKdfAlgInfo.swift in Sources */,
+				7D40844D1C066773E2BEC6FF1B6FDB8C /* Sec1Serializer.swift in Sources */,
+				A03AB0E10596488B01B3E7CF5D7F3BA8 /* SeedEntropySource.swift in Sources */,
+				372D434B90DDD1A50A1EA14B1BC4704B /* Sha224.swift in Sources */,
+				5A26F662138C25E1B39C53C841E29865 /* Sha256.swift in Sources */,
+				CA7915A3432B067893EBD77D45A2849C /* Sha384.swift in Sources */,
+				741F6AF441EBB1433FEF26427A116C6B /* Sha512.swift in Sources */,
+				E9419BA683E1BCC085943CE2A001DC93 /* SignedDataInfo.swift in Sources */,
+				AC1277764B35B68E9B476C1B27E2A9CC /* Signer.swift in Sources */,
+				8FCC866160EA06B7175B47451FDC17B3 /* SignerInfo.swift in Sources */,
+				98DCFF65A8D11D81B7E3F91ECF975F79 /* SignerInfoList.swift in Sources */,
+				BA355F9453561BFD44E281BA9163BA08 /* SimpleAlgInfo.swift in Sources */,
+				B08B9ECB2D5593048CD1B11A06C600A5 /* Verifier.swift in Sources */,
+				BFC03AFD8155373E1785F43C3FBEA0B9 /* VirgilCryptoFoundation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17B81247D4F4A7A18CFDB325C4885E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ClaySDK;
+			target = B2798278EB199E9E60DD57FE7E3EBF82 /* ClaySDK */;
+			targetProxy = E768AC4CE442FB3A548A13D4F9ACDAEF /* PBXContainerItemProxy */;
+		};
+		19135D32AB229096B513B456B26FA7DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VSCCrypto;
+			target = 8BDFA2C0DB14198AE4E03AC7689629D4 /* VSCCrypto */;
+			targetProxy = 278F1AE2F1D132966F74F81C6B311F53 /* PBXContainerItemProxy */;
+		};
+		2130AC47EB6798B7644FC8AE4F1C22F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VirgilCrypto;
+			target = 27865AF1C1942627E7CB060EB758FFBB /* VirgilCrypto */;
+			targetProxy = 5C055AD77536245F59FB900AE9AA75ED /* PBXContainerItemProxy */;
+		};
+		2E3D211C6DE06231AABD833E7D6BF95C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VirgilCryptoFoundation;
+			target = 5311CEADBF207FF3DEECDC5946C64882 /* VirgilCryptoFoundation */;
+			targetProxy = EDCE91586FDAAFBF70A9265B5CBBB5B6 /* PBXContainerItemProxy */;
+		};
+		805B4D4A7D96B932D053E508EA84757F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VirgilCrypto;
+			target = 27865AF1C1942627E7CB060EB758FFBB /* VirgilCrypto */;
+			targetProxy = C822B3FE8DD078EDFD29F77088973A13 /* PBXContainerItemProxy */;
+		};
+		9EA673B92EC2B114B46F010C0FB4AF5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VirgilCryptoFoundation;
+			target = 5311CEADBF207FF3DEECDC5946C64882 /* VirgilCryptoFoundation */;
+			targetProxy = 7E51213738EDA5AD4AFC261867626ADB /* PBXContainerItemProxy */;
+		};
+		C0A9E3B5A90835791361C1811B83B9F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VirgilSDK;
+			target = 3C710066F044BC68BAA8FAFEEC7089AF /* VirgilSDK */;
+			targetProxy = B293E4B00F344B98C617B00E1761F37A /* PBXContainerItemProxy */;
+		};
+		DA4B544477B923063FA03578AFE2B537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VirgilSDK;
+			target = 3C710066F044BC68BAA8FAFEEC7089AF /* VirgilSDK */;
+			targetProxy = 4383A955084A0767082B16782A7F9BDF /* PBXContainerItemProxy */;
+		};
+		FF6F43BA4BD866731790AC1D332DCB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VSCCrypto;
+			target = 8BDFA2C0DB14198AE4E03AC7689629D4 /* VSCCrypto */;
+			targetProxy = 583FB22DDB51A218E270A777487D6632 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		072CF24DD597B28B1EC6485A97C6DC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		0D747E351592BBF3AF0B2A62F4588229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DA829D6348287166255C6E19605032 /* VSCCrypto.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14350134A002E19B94867198977A89B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFD1155F57196043FCDEB4D1C07C8E6 /* VirgilCryptoFoundation.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VirgilCryptoFoundation/VirgilCryptoFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VirgilCryptoFoundation/VirgilCryptoFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VirgilCryptoFoundation/VirgilCryptoFoundation.modulemap";
+				PRODUCT_MODULE_NAME = VirgilCryptoFoundation;
+				PRODUCT_NAME = VirgilCryptoFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35B6D17C345B5E3732D2BA785D7FFDD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8321C32255EB5A1E06484EE53AA5E61 /* Pods-Greet.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Greet/Pods-Greet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Greet/Pods-Greet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74883BFF8B9E1E6373566963A0F6C774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E469820606738BD410197FF68C490B /* ClaySDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FCC784B89CC37EAA5A93AF59B87312F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5704EEBD66948119EE56443057468344 /* VirgilSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VirgilSDK/VirgilSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VirgilSDK/VirgilSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VirgilSDK/VirgilSDK.modulemap";
+				PRODUCT_MODULE_NAME = VirgilSDK;
+				PRODUCT_NAME = VirgilSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		85B16DC3DACC7E56A3D236CCA069BEAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37798948EC6019AFE58F9A3A0AC8525E /* VirgilCrypto.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VirgilCrypto/VirgilCrypto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VirgilCrypto/VirgilCrypto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VirgilCrypto/VirgilCrypto.modulemap";
+				PRODUCT_MODULE_NAME = VirgilCrypto;
+				PRODUCT_NAME = VirgilCrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94CA9DF48CE575FECE47DDD8786D50E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A5FE7038122BD7465E636607908566FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707347CBE153CC2A70E8B5EC35420714 /* VirgilSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VirgilSDK/VirgilSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VirgilSDK/VirgilSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VirgilSDK/VirgilSDK.modulemap";
+				PRODUCT_MODULE_NAME = VirgilSDK;
+				PRODUCT_NAME = VirgilSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A7CC2B53A80D164DC03D89E15126A76C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBCEEFE85C34B4FED66CC16E1354210 /* Pods-Greet.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Greet/Pods-Greet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Greet/Pods-Greet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B92540BCBB092B8D7C91D964F6147BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F9071068BDE3D6694D0991F333253F /* VirgilCryptoFoundation.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VirgilCryptoFoundation/VirgilCryptoFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VirgilCryptoFoundation/VirgilCryptoFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VirgilCryptoFoundation/VirgilCryptoFoundation.modulemap";
+				PRODUCT_MODULE_NAME = VirgilCryptoFoundation;
+				PRODUCT_NAME = VirgilCryptoFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCCA1C5CBA21EF754CE22DAC528B2DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B886E1925C0B6DA3C3B57EB69A19D94 /* VSCCrypto.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2DDAC369F004E578D32E7CC4AEEBF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBD707D9BAFBD0D573257013586D5AC /* ClaySDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB19A9E705F02D5F3B6C3568F95D1425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE270E7952E06CC18A6CF093F6FB1C6 /* VirgilCrypto.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VirgilCrypto/VirgilCrypto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VirgilCrypto/VirgilCrypto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VirgilCrypto/VirgilCrypto.modulemap";
+				PRODUCT_MODULE_NAME = VirgilCrypto;
+				PRODUCT_NAME = VirgilCrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B85B89C002BFA7BABC7D975458E231E /* Build configuration list for PBXAggregateTarget "VSCCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCA1C5CBA21EF754CE22DAC528B2DC3 /* Debug */,
+				0D747E351592BBF3AF0B2A62F4588229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29A977F80347E6E6BFB6ED05760B42C7 /* Build configuration list for PBXAggregateTarget "ClaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDAC369F004E578D32E7CC4AEEBF14 /* Debug */,
+				74883BFF8B9E1E6373566963A0F6C774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34B54A48207AFA93C6604407B44F49B9 /* Build configuration list for PBXNativeTarget "VirgilSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FE7038122BD7465E636607908566FF /* Debug */,
+				7FCC784B89CC37EAA5A93AF59B87312F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CA9DF48CE575FECE47DDD8786D50E7 /* Debug */,
+				072CF24DD597B28B1EC6485A97C6DC75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C18D17C4BA47D026D97FF13B728D1C55 /* Build configuration list for PBXNativeTarget "VirgilCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85B16DC3DACC7E56A3D236CCA069BEAC /* Debug */,
+				FB19A9E705F02D5F3B6C3568F95D1425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F07C1BEDBD1293F617E6504F9837BA9F /* Build configuration list for PBXNativeTarget "Pods-Greet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7CC2B53A80D164DC03D89E15126A76C /* Debug */,
+				35B6D17C345B5E3732D2BA785D7FFDD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23BACC608DB755DD25D72428362539C /* Build configuration list for PBXNativeTarget "VirgilCryptoFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14350134A002E19B94867198977A89B1 /* Debug */,
+				B92540BCBB092B8D7C91D964F6147BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
